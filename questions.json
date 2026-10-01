@@ -1261,8 +1261,8 @@
     "id": "2018-北榮交換-02",
     "subject": "交換",
     "section": "",
-    "year": "",
-    "hospital": "",
+    "year": "2018",
+    "hospital": "北榮",
     "disputed": false,
     "isExchange": true,
     "diagnosis": "",
@@ -1276,8 +1276,8 @@
     "id": "2018-北榮交換-03",
     "subject": "交換",
     "section": "",
-    "year": "",
-    "hospital": "",
+    "year": "2018",
+    "hospital": "北榮",
     "disputed": false,
     "isExchange": true,
     "diagnosis": "",
@@ -1292,8 +1292,8 @@
     "id": "2018-北榮交換-04",
     "subject": "交換",
     "section": "",
-    "year": "",
-    "hospital": "",
+    "year": "2018",
+    "hospital": "北榮",
     "disputed": false,
     "isExchange": true,
     "diagnosis": "",
@@ -41703,15 +41703,15 @@
     "id": "2023-高榮交換-25",
     "subject": "交換",
     "section": "",
-    "year": "",
-    "hospital": "",
+    "year": "2023",
+    "hospital": "高榮",
     "disputed": false,
     "isExchange": true,
     "diagnosis": "",
     "caseImages": [
-      "2023-高榮交換-2501.jpg"
+      "2023-高榮交換-2502.jpg"
     ],
-    "answerImage": "2023-高榮交換-2502.jpg"
+    "answerImage": "2023-高榮交換-2501.jpg"
   },
   {
     "id": "2023-高榮交換-26",
@@ -67691,7 +67691,7 @@
     "caseImages": [
       "ST2016081701.jpg"
     ],
-    "answerImage": "ST2016081702.JPG"
+    "answerImage": "ST2016081702.jpg"
   },
   {
     "id": "ST20160818",
