@@ -56,6 +56,10 @@
   button.hide-btn.active { background: var(--muted); border-color: var(--muted); color: #1a1f27; }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
   main { max-width: 900px; margin: 0 auto; padding: 20px; }
+  /* 桌機：刷題畫面加寬，讓兩張影像可以並排顯示（首頁維持原本較窄的版面） */
+  @media (min-width: 701px) {
+    body.quiz-mode main { max-width: min(1760px, 96vw); }
+  }
 
   /* 首頁 */
   .home-card {
@@ -92,29 +96,42 @@
     border-radius: 14px;
     padding: 20px;
   }
-  .progress { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  /* 底片帶：案例圖與答案圖全部排在同一條橫向帶上，高度固定在一個螢幕內，
-     下方按鈕位置因此不會被圖片高度推動 */
+  /* 卡片頂端：題號資訊 + 工具列整合在同一列，下方全部留給影像 */
+  .card-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .card-info {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    font-size: 13px; color: var(--muted);
+  }
+  /* 底片帶：案例圖與答案圖全部排在同一條橫向帶上，桌機兩張並排 */
   .film-strip {
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 10px;
-    margin-bottom: 16px;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 6px;
+    height: clamp(320px, calc(100vh - 230px), 900px);
   }
   .film-strip > img,
   .film-strip > .answer-slot {
-    flex: 0 0 auto;
-    height: min(62vh, 560px);
-    width: auto;
+    flex: 0 0 calc(50% - 5px); /* 一次並排兩張，第三張以後橫向捲動 */
+    height: 100%;
     border-radius: 8px;
+    background: #000;
   }
   .film-strip > img {
     display: block;
+    width: 100%;
+    object-fit: contain;
     border: 1px solid var(--border);
   }
   .answer-slot {
@@ -123,8 +140,9 @@
     border: 1px dashed var(--border);
   }
   .answer-slot img {
+    width: 100%;
     height: 100%;
-    width: auto;
+    object-fit: contain;
     display: block;
     filter: blur(24px) brightness(0.5);
     transform: scale(1.03);
@@ -133,17 +151,16 @@
   .answer-slot.revealed img {
     filter: none;
   }
-  /* 手機/窄螢幕：改以螢幕寬度為基準，避免圖片被拉得過寬需要一直橫向捲 */
+  /* 手機/窄螢幕：一次顯示一張，滑動切換 */
   @media (max-width: 700px) {
+    .film-strip {
+      height: clamp(280px, calc(100vh - 260px), 620px);
+    }
     .film-strip > img,
     .film-strip > .answer-slot {
-      height: auto;
-      max-height: 60vh;
-      width: 86vw;
+      flex: 0 0 86vw;
     }
-    .answer-slot img { width: 100%; height: auto; }
   }
-  .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .answer-cover {
     position: absolute;
     inset: 0;
@@ -161,7 +178,9 @@
     border-radius: 999px;
     font-size: 14px;
   }
-  .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .controls button { padding: 7px 11px; font-size: 13px; }
+  body.quiz-mode footer { padding: 12px; }
   .empty { text-align: center; color: var(--muted); padding: 60px 20px; }
   footer { text-align: center; color: var(--muted); font-size: 12px; padding: 30px; }
   .badge {
@@ -397,6 +416,7 @@ function showHome() {
   document.getElementById("homeView").classList.remove("hidden");
   document.getElementById("quizView").classList.add("hidden");
   document.getElementById("homeBtn").classList.add("hidden");
+  document.body.classList.remove("quiz-mode");
   updateHomeSummary();
 }
 
@@ -422,6 +442,7 @@ function startQuiz(order) {
   document.getElementById("homeView").classList.add("hidden");
   document.getElementById("quizView").classList.remove("hidden");
   document.getElementById("homeBtn").classList.remove("hidden");
+  document.body.classList.add("quiz-mode");
   updateStatBar();
   renderCard();
 }
@@ -446,28 +467,30 @@ function renderCard() {
 
   area.innerHTML = `
     <div class="card">
-      <div class="progress">第 ${idx + 1} / ${pool.length} 題　${q.id}</div>
-      <div class="meta">
-        <span class="badge">${q.subject || ""}</span>
-        <span class="badge">${q.section || ""}</span>
-        <span class="badge">${q.hospital || ""} ${q.year || ""}</span>
-        ${exchangeBadge}${disputedBadge}${wrongBadge}
+      <div class="card-top">
+        <div class="card-info">
+          <span>第 ${idx + 1} / ${pool.length} 題　${q.id}</span>
+          <span class="badge">${q.subject || ""}</span>
+          <span class="badge">${q.section || ""}</span>
+          <span class="badge">${q.hospital || ""} ${q.year || ""}</span>
+          ${exchangeBadge}${disputedBadge}${wrongBadge}
+        </div>
+        <div class="controls">
+          <button class="star-btn ${isFav ? "active" : ""}" id="favBtn">${isFav ? "⭐ 已收藏" : "☆ 收藏此題"}</button>
+          <button class="hide-btn ${isHidden ? "active" : ""}" id="hideBtn">${isHidden ? "🙈 已隱藏（點擊取消）" : "🙈 隱藏此題"}</button>
+          <button class="good" id="correctBtn" disabled>✅ 我答對了</button>
+          <button class="bad" id="wrongBtn" disabled>❌ 我答錯了</button>
+          <button id="prevBtn" ${idx === 0 ? "disabled" : ""}>▲ 上一題</button>
+          <button id="nextBtn">▼ 下一題</button>
+        </div>
       </div>
+
       <div class="film-strip" id="filmStrip">
         ${caseImgsHtml}
         <div class="answer-slot" id="answerWrap">
           <img src="images/${encodeURIComponent(q.answerImage)}">
           <div class="answer-cover" id="answerCover"><span>👁 點擊看答案</span></div>
         </div>
-      </div>
-
-      <div class="controls">
-        <button class="star-btn ${isFav ? "active" : ""}" id="favBtn">${isFav ? "⭐ 已收藏" : "☆ 收藏此題"}</button>
-        <button class="hide-btn ${isHidden ? "active" : ""}" id="hideBtn">${isHidden ? "🙈 已隱藏（點擊取消）" : "🙈 隱藏此題"}</button>
-        <button class="good" id="correctBtn" disabled>✅ 我答對了</button>
-        <button class="bad" id="wrongBtn" disabled>❌ 我答錯了</button>
-        <button id="prevBtn" ${idx === 0 ? "disabled" : ""}>▲ 上一題</button>
-        <button id="nextBtn">▼ 下一題</button>
       </div>
     </div>
   `;
