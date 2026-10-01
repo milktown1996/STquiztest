@@ -93,14 +93,28 @@
     padding: 20px;
   }
   .progress { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  .images { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+  .images {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    padding-bottom: 4px;
+  }
   .images img {
     max-width: 100%;
     max-height: 480px;
+    width: auto;
     border-radius: 8px;
     border: 1px solid var(--border);
-    flex: 1 1 auto;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
   }
+  /* 單張圖片時仍撐滿卡片寬度，不需要橫向捲動 */
+  .images.single-image { overflow-x: visible; }
+  .images.single-image img { max-width: 100%; width: 100%; flex: 1 1 auto; }
   .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .answer-wrap {
     position: relative;
@@ -427,7 +441,7 @@ function renderCard() {
         <span class="badge">${q.hospital || ""} ${q.year || ""}</span>
         ${exchangeBadge}${disputedBadge}${wrongBadge}
       </div>
-      <div class="images">${caseImgsHtml}</div>
+      <div class="images ${q.caseImages.length === 1 ? "single-image" : ""}">${caseImgsHtml}</div>
 
       <div class="answer-wrap" id="answerWrap">
         <img src="images/${encodeURIComponent(q.answerImage)}">
