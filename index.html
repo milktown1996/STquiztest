@@ -37,7 +37,7 @@
     z-index: 10;
   }
   header h1 { font-size: 18px; margin: 0; margin-right: auto; }
-  select, button {
+  select, button, input {
     background: var(--panel2);
     color: var(--text);
     border: 1px solid var(--border);
@@ -45,14 +45,42 @@
     padding: 8px 12px;
     font-size: 14px;
     cursor: pointer;
+    font-family: inherit;
   }
+  input[type="text"] { cursor: text; }
   button.primary { background: var(--accent); border-color: var(--accent); color: white; font-weight: 600; }
   button.good { background: var(--good); border-color: var(--good); color: white; }
   button.bad { background: var(--bad); border-color: var(--bad); color: white; }
   button.star-btn { font-size: 16px; }
   button.star-btn.active { background: var(--star); border-color: var(--star); color: #3a2e00; }
+  button.hide-btn.active { background: var(--muted); border-color: var(--muted); color: #1a1f27; }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
   main { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+  /* 首頁 */
+  .home-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+  }
+  .home-card h2 { margin-top: 0; font-size: 20px; }
+  .field-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+  .field { flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px; }
+  .field label { font-size: 12px; color: var(--muted); }
+  .field select, .field input { width: 100%; }
+  .checkbox-group { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--panel2); border: 1px solid var(--border); border-radius: 999px;
+    padding: 6px 12px; font-size: 13px; cursor: pointer; user-select: none;
+  }
+  .chip input { display: none; }
+  .chip.checked { background: var(--accent); border-color: var(--accent); color: white; }
+  .home-summary { font-size: 13px; color: var(--muted); margin: 16px 0; display: flex; gap: 16px; flex-wrap: wrap; }
+  .home-summary b { color: var(--text); }
+  .start-btn { width: 100%; padding: 14px; font-size: 16px; margin-top: 8px; }
+
   .stat-bar {
     display: flex; gap: 16px; font-size: 13px; color: var(--muted);
     margin-bottom: 16px; flex-wrap: wrap;
@@ -115,40 +143,90 @@
     display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px;
     background: var(--panel2); border: 1px solid var(--border); color: var(--muted);
   }
+  .hidden { display: none !important; }
 </style>
 </head>
 <body>
 
-<header>
+<header id="appHeader">
   <h1>🧠 季考閱片刷題</h1>
-  <select id="subjectFilter"><option value="">全部科目</option></select>
-  <select id="sectionFilter"><option value="">全部單元</option></select>
-  <select id="hospitalFilter"><option value="">全部院區</option></select>
-  <select id="modeFilter">
-    <option value="all">全部題目</option>
-    <option value="wrongOnly">只練錯題</option>
-    <option value="favOnly">⭐ 只看收藏</option>
-  </select>
-  <button id="shuffleBtn">🔀 隨機出題</button>
+  <button id="homeBtn" class="hidden">🏠 回首頁</button>
   <button id="resetStatBtn">重置紀錄</button>
 </header>
 
 <main>
-  <div class="stat-bar">
-    <span>本次已答: <b id="statAnswered">0</b></span>
-    <span>答對: <b id="statCorrect">0</b></span>
-    <span>答錯: <b id="statWrong">0</b></span>
-    <span>累積錯題數: <b id="statWrongTotal">0</b></span>
-    <span>⭐ 收藏題數: <b id="statFav">0</b></span>
+
+  <!-- 首頁：篩選與搜尋 -->
+  <div id="homeView">
+    <div class="home-card">
+      <h2>開始刷題</h2>
+
+      <div class="field-row">
+        <div class="field" style="flex: 2 1 280px;">
+          <label>科目（可複選，不勾選 = 全部）</label>
+          <div class="checkbox-group" id="subjectCheckboxes"></div>
+        </div>
+        <div class="field" style="flex: 2 1 280px;">
+          <label>年份（可複選，不勾選 = 全部）</label>
+          <div class="checkbox-group" id="yearCheckboxes"></div>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label>單元</label>
+          <select id="sectionFilter"><option value="">全部單元</option></select>
+        </div>
+        <div class="field">
+          <label>院區</label>
+          <select id="hospitalFilter"><option value="">全部院區</option></select>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label>模式</label>
+          <select id="modeFilter">
+            <option value="all">全部題目</option>
+            <option value="wrongOnly">只練錯題</option>
+            <option value="favOnly">⭐ 只看收藏</option>
+            <option value="hiddenOnly">🙈 只看已隱藏（管理用）</option>
+          </select>
+        </div>
+        <div class="field" style="flex: 2 1 260px;">
+          <label>搜尋（題號或診斷關鍵字，如 ST20240530 / meningioma）</label>
+          <input type="text" id="searchInput" placeholder="輸入題號或診斷關鍵字...">
+        </div>
+      </div>
+
+      <div class="home-summary">
+        <span>符合篩選題數: <b id="matchCount">0</b></span>
+        <span>⭐ 收藏: <b id="homeFav">0</b></span>
+        <span>❌ 累積錯題: <b id="homeWrong">0</b></span>
+        <span>🙈 已隱藏: <b id="homeHidden">0</b></span>
+      </div>
+
+      <button class="primary start-btn" id="startBtn">▶ 開始刷題（隨機順序）</button>
+      <button class="start-btn" id="startInOrderBtn">▶ 開始刷題（依原順序）</button>
+    </div>
   </div>
 
-  <div id="quizArea"></div>
+  <!-- 刷題畫面 -->
+  <div id="quizView" class="hidden">
+    <div class="stat-bar">
+      <span>本次已答: <b id="statAnswered">0</b></span>
+      <span>答對: <b id="statCorrect">0</b></span>
+      <span>答錯: <b id="statWrong">0</b></span>
+    </div>
+    <div id="quizArea"></div>
+  </div>
+
 </main>
 
 <footer>資料來源：季考閱片題目順序（全科目）／僅供個人複習使用</footer>
 
 <script>
-const STORAGE_KEY = "quiz_progress_v3";
+const STORAGE_KEY = "quiz_progress_v4";
 
 let questions = [];
 let pool = [];
@@ -157,25 +235,17 @@ let idx = 0;
 function loadProgress() {
   try {
     return Object.assign(
-      { wrong: {}, correct: {}, favorites: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 },
+      { wrong: {}, correct: {}, favorites: {}, hidden: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 },
       JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}
     );
   } catch (e) {
-    return { wrong: {}, correct: {}, favorites: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 };
+    return { wrong: {}, correct: {}, favorites: {}, hidden: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 };
   }
 }
 let progress = loadProgress();
 
 function saveProgress() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-}
-
-function updateStatBar() {
-  document.getElementById("statAnswered").textContent = progress.sessionAnswered;
-  document.getElementById("statCorrect").textContent = progress.sessionCorrect;
-  document.getElementById("statWrong").textContent = progress.sessionWrong;
-  document.getElementById("statWrongTotal").textContent = Object.keys(progress.wrong).length;
-  document.getElementById("statFav").textContent = Object.keys(progress.favorites).length;
 }
 
 function shuffle(arr) {
@@ -187,21 +257,48 @@ function shuffle(arr) {
   return a;
 }
 
+/* ---------- 首頁 ---------- */
+
+function buildCheckboxGroup(containerId, values, onChange) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+  values.forEach(v => {
+    const label = document.createElement("label");
+    label.className = "chip";
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.value = v;
+    input.addEventListener("change", () => {
+      label.classList.toggle("checked", input.checked);
+      onChange();
+    });
+    const span = document.createElement("span");
+    span.textContent = v;
+    label.appendChild(input);
+    label.appendChild(span);
+    container.appendChild(label);
+  });
+}
+
+function getCheckedValues(containerId) {
+  return [...document.querySelectorAll(`#${containerId} input:checked`)].map(i => i.value);
+}
+
 function populateFilters() {
-  const subjectSel = document.getElementById("subjectFilter");
   const sectionSel = document.getElementById("sectionFilter");
   const hospSel = document.getElementById("hospitalFilter");
 
   const subjects = [...new Set(questions.map(q => q.subject).filter(Boolean))].sort();
-  subjects.forEach(s => {
-    const o = document.createElement("option");
-    o.value = s; o.textContent = s;
-    subjectSel.appendChild(o);
-  });
+  const years = [...new Set(questions.map(q => q.year).filter(Boolean))].sort().reverse();
+
+  buildCheckboxGroup("subjectCheckboxes", subjects, () => { refillDependent(); updateHomeSummary(); });
+  buildCheckboxGroup("yearCheckboxes", years, updateHomeSummary);
 
   function refillDependent() {
-    const subject = subjectSel.value;
-    const scoped = subject ? questions.filter(q => q.subject === subject) : questions;
+    const selectedSubjects = getCheckedValues("subjectCheckboxes");
+    const scoped = selectedSubjects.length
+      ? questions.filter(q => selectedSubjects.includes(q.subject))
+      : questions;
 
     const curSection = sectionSel.value;
     const curHosp = hospSel.value;
@@ -222,29 +319,76 @@ function populateFilters() {
     if ([...hospSel.options].some(o => o.value === curHosp)) hospSel.value = curHosp;
   }
 
-  subjectSel.addEventListener("change", () => { refillDependent(); applyFilters(false); });
+  sectionSel.addEventListener("change", updateHomeSummary);
+  hospSel.addEventListener("change", updateHomeSummary);
+  document.getElementById("modeFilter").addEventListener("change", updateHomeSummary);
+  document.getElementById("searchInput").addEventListener("input", updateHomeSummary);
+
   refillDependent();
 }
 
-function applyFilters(doShuffle) {
-  const subject = document.getElementById("subjectFilter").value;
+function getFilteredQuestions() {
+  const selectedSubjects = getCheckedValues("subjectCheckboxes");
+  const selectedYears = getCheckedValues("yearCheckboxes");
   const section = document.getElementById("sectionFilter").value;
   const hospital = document.getElementById("hospitalFilter").value;
   const mode = document.getElementById("modeFilter").value;
+  const search = document.getElementById("searchInput").value.trim().toLowerCase();
 
-  let filtered = questions.filter(q => {
-    if (subject && q.subject !== subject) return false;
+  return questions.filter(q => {
+    if (selectedSubjects.length && !selectedSubjects.includes(q.subject)) return false;
+    if (selectedYears.length && !selectedYears.includes(String(q.year))) return false;
     if (section && q.section !== section) return false;
     if (hospital && q.hospital !== hospital) return false;
     if (mode === "wrongOnly" && !progress.wrong[q.id]) return false;
     if (mode === "favOnly" && !progress.favorites[q.id]) return false;
+    if (mode === "hiddenOnly" && !progress.hidden[q.id]) return false;
+    if (mode !== "hiddenOnly" && progress.hidden[q.id]) return false; // 預設排除已隱藏
+    if (search) {
+      const hay = (q.id + " " + (q.diagnosis || "")).toLowerCase();
+      if (!hay.includes(search)) return false;
+    }
     return true;
   });
+}
 
+function updateHomeSummary() {
+  const filtered = getFilteredQuestions();
+  document.getElementById("matchCount").textContent = filtered.length;
+  document.getElementById("homeFav").textContent = Object.keys(progress.favorites).length;
+  document.getElementById("homeWrong").textContent = Object.keys(progress.wrong).length;
+  document.getElementById("homeHidden").textContent = Object.keys(progress.hidden).length;
+}
+
+function updateStatBar() {
+  document.getElementById("statAnswered").textContent = progress.sessionAnswered;
+  document.getElementById("statCorrect").textContent = progress.sessionCorrect;
+  document.getElementById("statWrong").textContent = progress.sessionWrong;
+}
+
+function showHome() {
+  document.getElementById("homeView").classList.remove("hidden");
+  document.getElementById("quizView").classList.add("hidden");
+  document.getElementById("homeBtn").classList.add("hidden");
+  updateHomeSummary();
+}
+
+function startQuiz(doShuffle) {
+  const filtered = getFilteredQuestions();
+  if (filtered.length === 0) {
+    alert("目前篩選條件下沒有題目");
+    return;
+  }
   pool = doShuffle ? shuffle(filtered) : filtered;
   idx = 0;
+  document.getElementById("homeView").classList.add("hidden");
+  document.getElementById("quizView").classList.remove("hidden");
+  document.getElementById("homeBtn").classList.remove("hidden");
+  updateStatBar();
   renderCard();
 }
+
+/* ---------- 刷題畫面 ---------- */
 
 function renderCard() {
   const area = document.getElementById("quizArea");
@@ -257,8 +401,10 @@ function renderCard() {
 
   const caseImgsHtml = q.caseImages.map(img => `<img src="images/${encodeURIComponent(img)}" loading="lazy">`).join("");
   const disputedBadge = q.disputed ? `<span class="badge" style="border-color:#e5a53b;color:#e5a53b">答案疑慮</span>` : "";
+  const exchangeBadge = q.isExchange ? `<span class="badge" style="border-color:var(--accent);color:var(--accent)">交換考題</span>` : "";
   const wrongBadge = progress.wrong[q.id] ? `<span class="badge" style="border-color:var(--bad);color:var(--bad)">曾答錯</span>` : "";
   const isFav = !!progress.favorites[q.id];
+  const isHidden = !!progress.hidden[q.id];
 
   area.innerHTML = `
     <div class="card">
@@ -267,7 +413,7 @@ function renderCard() {
         <span class="badge">${q.subject || ""}</span>
         <span class="badge">${q.section || ""}</span>
         <span class="badge">${q.hospital || ""} ${q.year || ""}</span>
-        ${disputedBadge}${wrongBadge}
+        ${exchangeBadge}${disputedBadge}${wrongBadge}
       </div>
       <div class="images">${caseImgsHtml}</div>
 
@@ -278,6 +424,7 @@ function renderCard() {
 
       <div class="controls">
         <button class="star-btn ${isFav ? "active" : ""}" id="favBtn">${isFav ? "⭐ 已收藏" : "☆ 收藏此題"}</button>
+        <button class="hide-btn ${isHidden ? "active" : ""}" id="hideBtn">${isHidden ? "🙈 已隱藏（點擊取消）" : "🙈 隱藏此題"}</button>
         <button class="good" id="correctBtn" disabled>✅ 我答對了</button>
         <button class="bad" id="wrongBtn" disabled>❌ 我答錯了</button>
         <button id="nextBtn">下一題 ▶</button>
@@ -292,6 +439,7 @@ function renderCard() {
     document.getElementById("wrongBtn").disabled = false;
   };
   document.getElementById("favBtn").onclick = () => toggleFavorite(q);
+  document.getElementById("hideBtn").onclick = () => toggleHidden(q);
   document.getElementById("correctBtn").onclick = () => markAndNext(q, true);
   document.getElementById("wrongBtn").onclick = () => markAndNext(q, false);
   document.getElementById("nextBtn").onclick = () => { idx++; renderCard(); };
@@ -304,16 +452,19 @@ function toggleFavorite(q) {
     progress.favorites[q.id] = true;
   }
   saveProgress();
-  updateStatBar();
-  const btn = document.getElementById("favBtn");
-  const isFav = !!progress.favorites[q.id];
-  btn.classList.toggle("active", isFav);
-  btn.textContent = isFav ? "⭐ 已收藏" : "☆ 收藏此題";
-  // 若目前正在「只看收藏」模式，取消收藏後應立即從當前作答清單移除
-  if (document.getElementById("modeFilter").value === "favOnly" && !isFav) {
-    pool.splice(idx, 1);
-    renderCard();
+  renderCard();
+}
+
+function toggleHidden(q) {
+  if (progress.hidden[q.id]) {
+    delete progress.hidden[q.id];
+  } else {
+    progress.hidden[q.id] = true;
   }
+  saveProgress();
+  // 若目前模式會因隱藏狀態改變而應該離開當前列表，直接移除並跳下一題
+  pool.splice(idx, 1);
+  renderCard();
 }
 
 function markAndNext(q, isCorrect) {
@@ -332,20 +483,19 @@ function markAndNext(q, isCorrect) {
   renderCard();
 }
 
-document.getElementById("shuffleBtn").onclick = () => applyFilters(true);
-document.getElementById("sectionFilter").onchange = () => applyFilters(false);
-document.getElementById("hospitalFilter").onchange = () => applyFilters(false);
-document.getElementById("modeFilter").onchange = () => applyFilters(false);
+document.getElementById("startBtn").onclick = () => startQuiz(true);
+document.getElementById("startInOrderBtn").onclick = () => startQuiz(false);
+document.getElementById("homeBtn").onclick = showHome;
 document.getElementById("resetStatBtn").onclick = () => {
-  if (confirm("確定要重置作答紀錄與錯題統計嗎？（收藏清單不會被清除）")) {
+  if (confirm("確定要重置作答紀錄與錯題統計嗎？（收藏與隱藏清單不會被清除）")) {
     progress.wrong = {};
     progress.correct = {};
     progress.sessionAnswered = 0;
     progress.sessionCorrect = 0;
     progress.sessionWrong = 0;
     saveProgress();
+    updateHomeSummary();
     updateStatBar();
-    applyFilters(false);
   }
 };
 
@@ -354,11 +504,10 @@ fetch("questions.json")
   .then(data => {
     questions = data;
     populateFilters();
-    updateStatBar();
-    applyFilters(true);
+    showHome();
   })
   .catch(err => {
-    document.getElementById("quizArea").innerHTML = `<div class="card empty">載入題庫失敗：${err}</div>`;
+    document.getElementById("homeView").innerHTML = `<div class="card empty">載入題庫失敗：${err}</div>`;
   });
 </script>
 

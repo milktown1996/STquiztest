@@ -13,6 +13,7 @@ from pathlib import Path
 VAULT = Path(r"C:\Obsidian 資料庫\CYP")
 ORDER_DIR = VAULT / "外" / "專科考試 l 季考閱片" / "季考閱片_題目順序"
 IMAGES_ROOT = VAULT / "外" / "專科考試 l 季考閱片" / "季考閱片_原始圖片"
+TOPIC_DIR = VAULT / "外" / "專科考試 l 季考閱片" / "季考閱片_題目整理"
 SITE_DIR = Path(__file__).parent
 OUT_IMAGES = SITE_DIR / "images"
 OUT_JSON = SITE_DIR / "questions.json"
@@ -45,13 +46,29 @@ for img_path in IMAGES_ROOT.rglob("*"):
             duplicate_filenames.add(img_path.name)
         filename_index[img_path.name] = img_path
 
+# 建立「題號 -> 診斷名稱」對照表：掃描 季考閱片_題目整理 資料夾內每個 ST_疾病.md，
+# 其 frontmatter Disease 欄位即診斷名稱，內文 ![[STyyyymmddNN]] 即對應的題號
+diagnosis_index = {}
+id_embed_re = re.compile(r"!\[\[(ST\d{8,10})\]\]")
+for f in TOPIC_DIR.glob("ST_*.md"):
+    try:
+        text = f.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        continue
+    fm, body = parse_frontmatter(text)
+    disease = fm.get("Disease", "").strip()
+    if not disease:
+        continue
+    for st_id in id_embed_re.findall(body):
+        diagnosis_index.setdefault(st_id, disease)
+
 OUT_IMAGES.mkdir(parents=True, exist_ok=True)
 
 questions = []
 missing = []
 subject_counts = {}
 
-for f in sorted(ORDER_DIR.glob("ST*.md")):
+for f in sorted(ORDER_DIR.glob("*.md")):
     try:
         text = f.read_text(encoding="utf-8")
     except UnicodeDecodeError:
@@ -59,16 +76,19 @@ for f in sorted(ORDER_DIR.glob("ST*.md")):
 
     fm, body = parse_frontmatter(text)
     subject = fm.get("科目", "").strip()
-    if not subject:
-        continue
+    is_exchange = "交換" in f.stem
 
-    embeds = [e.strip() for e in embed_re.findall(body)]
+    # 部分檔案（尤其交換題）內文把同一組 embed 重複貼了兩次（複製貼上失誤），
+    # 依序去除重複檔名，保留原始出現順序
+    raw_embeds = [e.strip() for e in embed_re.findall(body)]
+    embeds = list(dict.fromkeys(raw_embeds))
     if not embeds:
         continue
 
     st_key = f.stem
 
     resolved = []
+    resolved_paths = []
     for e in embeds:
         src = filename_index.get(e)
         if src is None:
@@ -78,11 +98,28 @@ for f in sorted(ORDER_DIR.glob("ST*.md")):
         if not dest.exists():
             dest.write_bytes(src.read_bytes())
         resolved.append(src.name)
+        resolved_paths.append(src)
 
     if len(resolved) < 2:
         if resolved:
             missing.append(f"{f.name}: 圖片數量不足 ({len(resolved)})")
         continue
+
+    year = fm.get("年份", "")
+    hospital = fm.get("醫院", "")
+
+    if not subject:
+        if is_exchange:
+            subject = "交換"
+        else:
+            # 無 frontmatter 的題目（如 2026 年新增一批）：從圖片所在資料夾
+            # 名稱「YYYYMM 醫院」反推年份/院區，科目標記為「未分類」待日後人工補標
+            subject = "未分類"
+            hosp_dir_name = resolved_paths[0].parent.parent.name  # .../<YYYYMM 醫院>/<STkey>/img
+            m = re.match(r"(\d{6})\s*(.+)", hosp_dir_name)
+            if m:
+                year = year or m.group(1)
+                hospital = hospital or m.group(2)
 
     case_images = resolved[:-1]
     answer_image = resolved[-1]
@@ -91,9 +128,11 @@ for f in sorted(ORDER_DIR.glob("ST*.md")):
         "id": st_key,
         "subject": subject,
         "section": fm.get("Section", ""),
-        "year": fm.get("年份", ""),
-        "hospital": fm.get("醫院", ""),
+        "year": year,
+        "hospital": hospital,
         "disputed": fm.get("答案疑慮", "false") == "true",
+        "isExchange": is_exchange,
+        "diagnosis": diagnosis_index.get(st_key, ""),
         "caseImages": case_images,
         "answerImage": answer_image,
     })
@@ -101,7 +140,8 @@ for f in sorted(ORDER_DIR.glob("ST*.md")):
 
 OUT_JSON.write_text(json.dumps(questions, ensure_ascii=False, indent=2), encoding="utf-8")
 
-print(f"共輸出 {len(questions)} 題")
+matched_dx = sum(1 for q in questions if q["diagnosis"])
+print(f"共輸出 {len(questions)} 題（其中 {matched_dx} 題有對照到診斷名稱）")
 for s, c in sorted(subject_counts.items()):
     print(f"  {s}: {c} 題")
 print(f"複製圖片 {len(list(OUT_IMAGES.iterdir()))} 張")
