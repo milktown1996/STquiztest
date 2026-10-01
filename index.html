@@ -112,9 +112,9 @@
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
-  /* 單張圖片時仍撐滿卡片寬度，不需要橫向捲動 */
-  .images.single-image { overflow-x: visible; }
-  .images.single-image img { max-width: 100%; width: 100%; flex: 1 1 auto; }
+  /* 單張圖片時不需要橫向捲動，但仍依 max-height 等比縮放，不強制撐滿寬度
+     （避免直幅圖被拉成超高圖，維持跟多張圖片一致、固定在「一行」高度內） */
+  .images.single-image { overflow-x: visible; justify-content: flex-start; }
   .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .answer-wrap {
     position: relative;
