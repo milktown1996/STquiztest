@@ -459,18 +459,33 @@ function renderCard() {
     </div>
   `;
 
-  document.getElementById("answerCover").onclick = () => {
-    document.getElementById("answerWrap").classList.add("revealed");
-    document.getElementById("answerCover").style.display = "none";
-    document.getElementById("correctBtn").disabled = false;
-    document.getElementById("wrongBtn").disabled = false;
-  };
+  document.getElementById("answerCover").onclick = revealAnswer;
   document.getElementById("favBtn").onclick = () => toggleFavorite(q);
   document.getElementById("hideBtn").onclick = () => toggleHidden(q);
   document.getElementById("correctBtn").onclick = () => markAndNext(q, true);
   document.getElementById("wrongBtn").onclick = () => markAndNext(q, false);
   document.getElementById("nextBtn").onclick = () => { idx++; renderCard(); };
   document.getElementById("prevBtn").onclick = () => { if (idx > 0) { idx--; renderCard(); } };
+
+  // 滑鼠停留在圖片列上時，滾輪（垂直）轉換成橫向捲動，不觸發整頁上下捲動
+  area.querySelectorAll(".images, .answer-wrap").forEach(el => {
+    el.addEventListener("wheel", (e) => {
+      if (el.scrollWidth > el.clientWidth) {
+        e.preventDefault();
+        el.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  });
+}
+
+function revealAnswer() {
+  const wrap = document.getElementById("answerWrap");
+  const cover = document.getElementById("answerCover");
+  if (!wrap || !cover || wrap.classList.contains("revealed")) return;
+  wrap.classList.add("revealed");
+  cover.style.display = "none";
+  document.getElementById("correctBtn").disabled = false;
+  document.getElementById("wrongBtn").disabled = false;
 }
 
 function toggleFavorite(q) {
@@ -527,6 +542,24 @@ document.getElementById("resetStatBtn").onclick = () => {
     updateStatBar();
   }
 };
+
+// 鍵盤快捷鍵（僅在刷題畫面啟用）：Enter 看答案，← 上一題，→ 下一題
+document.addEventListener("keydown", (e) => {
+  if (document.getElementById("quizView").classList.contains("hidden")) return;
+  const tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "input" || tag === "textarea") return;
+
+  if (e.key === "Enter") {
+    e.preventDefault();
+    revealAnswer();
+  } else if (e.key === "ArrowRight") {
+    e.preventDefault();
+    document.getElementById("nextBtn")?.click();
+  } else if (e.key === "ArrowLeft") {
+    e.preventDefault();
+    document.getElementById("prevBtn")?.click();
+  }
+});
 
 fetch("questions.json")
   .then(r => r.json())
