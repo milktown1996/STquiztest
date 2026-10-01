@@ -12,16 +12,28 @@ from PIL import Image
 SITE_DIR = Path(__file__).parent
 IMAGES_DIR = SITE_DIR / "images"
 QUESTIONS_JSON = SITE_DIR / "questions.json"
+MANIFEST = SITE_DIR / "compressed_manifest.json"
 MAX_EDGE = 1600
 QUALITY = 80
+
+# 已壓縮過的檔案清單：避免每次重建都把全部圖片重新編碼一次
+# （重複有損壓縮會累積畫質損失，也很花時間）
+if MANIFEST.exists():
+    done = set(json.loads(MANIFEST.read_text(encoding="utf-8")))
+else:
+    done = set()
 
 total_before = 0
 total_after = 0
 count = 0
+skipped = 0
 rename_map = {}  # 原檔名 -> 新檔名
 
 for img_path in sorted(IMAGES_DIR.iterdir()):
     if img_path.suffix.lower() not in (".jpg", ".jpeg", ".png", ".webp"):
+        continue
+    if img_path.name in done:
+        skipped += 1
         continue
     before = img_path.stat().st_size
     total_before += before
@@ -49,8 +61,11 @@ for img_path in sorted(IMAGES_DIR.iterdir()):
     after = new_path.stat().st_size
     total_after += after
     count += 1
+    done.add(new_path.name)
 
-print(f"處理 {count} 張圖片")
+MANIFEST.write_text(json.dumps(sorted(done), ensure_ascii=False), encoding="utf-8")
+
+print(f"處理 {count} 張圖片（跳過 {skipped} 張先前已壓縮）")
 print(f"壓縮前: {total_before / 1024 / 1024:.1f} MB")
 print(f"壓縮後: {total_after / 1024 / 1024:.1f} MB")
 print(f"改名 {len(rename_map)} 張（非標準小寫 .jpg 副檔名）")

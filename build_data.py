@@ -94,10 +94,17 @@ for f in sorted(ORDER_DIR.glob("*.md")):
         if src is None:
             missing.append(f"{f.name}: {e}")
             continue
+        # 增量處理：compress_images.py 會把圖片統一壓縮並改名為小寫 .jpg，
+        # 若該版本已存在就直接沿用，不重新從 vault 複製原始大圖
+        compressed = OUT_IMAGES / (Path(src.name).stem + ".jpg")
         dest = OUT_IMAGES / src.name
-        if not dest.exists():
+        if compressed.exists():
+            resolved.append(compressed.name)
+        elif dest.exists():
+            resolved.append(dest.name)
+        else:
             dest.write_bytes(src.read_bytes())
-        resolved.append(src.name)
+            resolved.append(dest.name)
         resolved_paths.append(src)
 
     if len(resolved) < 2:
