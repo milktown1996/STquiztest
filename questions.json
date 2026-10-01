@@ -68840,7 +68840,7 @@
     "section": "BR (47-50)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -68871,7 +68871,7 @@
     "section": "BR (47-50)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -78822,7 +78822,7 @@
     "section": "BR (47-50)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -80909,7 +80909,7 @@
     "section": "BR (47-50)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -80924,7 +80924,7 @@
     "section": "BR (47-50)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -81634,7 +81634,7 @@
     "section": "BR (47-50)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -81648,7 +81648,7 @@
     "section": "BR (47-50)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -81662,7 +81662,7 @@
     "section": "BR (47-50)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -82325,7 +82325,7 @@
     "section": "BR (47-50)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -82340,7 +82340,7 @@
     "section": "BR (47-50)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -86603,7 +86603,7 @@
     "section": "BR (47-50)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -89452,7 +89452,7 @@
     "section": "BR (47-50)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -89467,7 +89467,7 @@
     "section": "BR (47-50)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -89482,7 +89482,7 @@
     "section": "BR (47-50)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "* BIRADS 0",
     "caseImages": [
@@ -91653,9 +91653,9 @@
     "section": "BR (47-50)",
     "year": "202411",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
-    "diagnosis": "",
+    "diagnosis": "Ductal carcinoma in situ (DCIS)",
     "caseImages": [
       "ST2024114901.jpg",
       "ST2024114902.jpg"
@@ -91670,7 +91670,7 @@
     "hospital": "國泰",
     "disputed": false,
     "isExchange": false,
-    "diagnosis": "Ductal carcinoma in situ (DCIS)",
+    "diagnosis": "Invasive Carcinoma of No Special Type (NST) or Invasive ductal carcinoma (IDC)",
     "caseImages": [
       "ST2024115001.jpg",
       "ST2024115003.jpg",
@@ -93051,7 +93051,7 @@
     "section": "BR (47-50)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ductal carcinoma in situ (DCIS)",
     "caseImages": [

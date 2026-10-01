@@ -254,6 +254,7 @@
             <option value="untouched">🆕 只看沒碰過的題目</option>
             <option value="wrongOnly">只練錯題</option>
             <option value="favOnly">⭐ 只看收藏</option>
+            <option value="disputedOnly">⚠ 只看答案疑慮</option>
             <option value="hiddenOnly">🙈 只看已隱藏（管理用）</option>
           </select>
         </div>
@@ -272,6 +273,7 @@
         <span>🆕 沒碰過: <b id="homeUntouched">0</b></span>
         <span>⭐ 收藏: <b id="homeFav">0</b></span>
         <span>❌ 累積錯題: <b id="homeWrong">0</b></span>
+        <span>⚠ 答案疑慮: <b id="homeDisputed">0</b></span>
         <span>🙈 已隱藏: <b id="homeHidden">0</b></span>
       </div>
 
@@ -434,6 +436,7 @@ function getFilteredQuestions() {
     if (mode === "untouched" && isTouched(q)) return false;
     if (mode === "wrongOnly" && !progress.wrong[q.id]) return false;
     if (mode === "favOnly" && !progress.favorites[q.id]) return false;
+    if (mode === "disputedOnly" && !q.disputed) return false;
     if (mode === "hiddenOnly" && !progress.hidden[q.id]) return false;
     if (mode !== "hiddenOnly" && progress.hidden[q.id]) return false; // 預設排除已隱藏
     if (search) {
@@ -450,6 +453,7 @@ function updateHomeSummary() {
   document.getElementById("homeUntouched").textContent = questions.filter(q => !isTouched(q)).length;
   document.getElementById("homeFav").textContent = Object.keys(progress.favorites).length;
   document.getElementById("homeWrong").textContent = Object.keys(progress.wrong).length;
+  document.getElementById("homeDisputed").textContent = questions.filter(q => q.disputed).length;
   document.getElementById("homeHidden").textContent = Object.keys(progress.hidden).length;
 }
 
