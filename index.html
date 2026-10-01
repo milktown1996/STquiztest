@@ -93,46 +93,59 @@
     padding: 20px;
   }
   .progress { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
-  .images {
+  /* 底片帶：案例圖與答案圖全部排在同一條橫向帶上，高度固定在一個螢幕內，
+     下方按鈕位置因此不會被圖片高度推動 */
+  .film-strip {
     display: flex;
     flex-wrap: nowrap;
+    align-items: flex-start;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x proximity;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
   }
-  .images img {
-    max-width: 100%;
-    max-height: 480px;
+  .film-strip > img,
+  .film-strip > .answer-slot {
+    flex: 0 0 auto;
+    height: min(62vh, 560px);
     width: auto;
     border-radius: 8px;
-    border: 1px solid var(--border);
-    flex: 0 0 auto;
     scroll-snap-align: start;
   }
-  /* 單張圖片時不需要橫向捲動，但仍依 max-height 等比縮放，不強制撐滿寬度
-     （避免直幅圖被拉成超高圖，維持跟多張圖片一致、固定在「一行」高度內） */
-  .images.single-image { overflow-x: visible; justify-content: flex-start; }
-  .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .answer-wrap {
+  .film-strip > img {
+    display: block;
+    border: 1px solid var(--border);
+  }
+  .answer-slot {
     position: relative;
-    margin-bottom: 16px;
-    border-radius: 10px;
     overflow: hidden;
     border: 1px dashed var(--border);
   }
-  .answer-wrap img {
-    width: 100%;
+  .answer-slot img {
+    height: 100%;
+    width: auto;
     display: block;
     filter: blur(24px) brightness(0.5);
-    transform: scale(1.02);
+    transform: scale(1.03);
     transition: filter 0.25s ease;
   }
-  .answer-wrap.revealed img {
+  .answer-slot.revealed img {
     filter: none;
   }
+  /* 手機/窄螢幕：改以螢幕寬度為基準，避免圖片被拉得過寬需要一直橫向捲 */
+  @media (max-width: 700px) {
+    .film-strip > img,
+    .film-strip > .answer-slot {
+      height: auto;
+      max-height: 60vh;
+      width: 86vw;
+    }
+    .answer-slot img { width: 100%; height: auto; }
+  }
+  .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .answer-cover {
     position: absolute;
     inset: 0;
@@ -441,11 +454,12 @@ function renderCard() {
         <span class="badge">${q.hospital || ""} ${q.year || ""}</span>
         ${exchangeBadge}${disputedBadge}${wrongBadge}
       </div>
-      <div class="images ${q.caseImages.length === 1 ? "single-image" : ""}">${caseImgsHtml}</div>
-
-      <div class="answer-wrap" id="answerWrap">
-        <img src="images/${encodeURIComponent(q.answerImage)}">
-        <div class="answer-cover" id="answerCover"><span>👁 點擊看答案</span></div>
+      <div class="film-strip" id="filmStrip">
+        ${caseImgsHtml}
+        <div class="answer-slot" id="answerWrap">
+          <img src="images/${encodeURIComponent(q.answerImage)}">
+          <div class="answer-cover" id="answerCover"><span>👁 點擊看答案</span></div>
+        </div>
       </div>
 
       <div class="controls">
@@ -467,15 +481,15 @@ function renderCard() {
   document.getElementById("nextBtn").onclick = () => { idx++; renderCard(); };
   document.getElementById("prevBtn").onclick = () => { if (idx > 0) { idx--; renderCard(); } };
 
-  // 滑鼠停留在圖片列上時，滾輪（垂直）轉換成橫向捲動，不觸發整頁上下捲動
-  area.querySelectorAll(".images, .answer-wrap").forEach(el => {
-    el.addEventListener("wheel", (e) => {
-      if (el.scrollWidth > el.clientWidth) {
-        e.preventDefault();
-        el.scrollLeft += e.deltaY;
-      }
+  // 滑鼠停留在底片帶上時，滾輪（垂直）轉成橫向捲動，不觸發整頁上下捲動
+  const strip = document.getElementById("filmStrip");
+  if (strip) {
+    strip.addEventListener("wheel", (e) => {
+      if (strip.scrollWidth <= strip.clientWidth) return;
+      e.preventDefault();
+      strip.scrollLeft += (Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX);
     }, { passive: false });
-  });
+  }
 }
 
 function revealAnswer() {
@@ -486,6 +500,9 @@ function revealAnswer() {
   cover.style.display = "none";
   document.getElementById("correctBtn").disabled = false;
   document.getElementById("wrongBtn").disabled = false;
+  // 答案圖在底片帶最右側，揭曉後自動橫向捲過去（不改變頁面垂直位置）
+  const strip = document.getElementById("filmStrip");
+  if (strip) strip.scrollTo({ left: strip.scrollWidth, behavior: "smooth" });
 }
 
 function toggleFavorite(q) {
