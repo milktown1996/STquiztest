@@ -251,6 +251,7 @@
           <label>模式</label>
           <select id="modeFilter">
             <option value="all">全部題目</option>
+            <option value="untouched">🆕 只看沒碰過的題目</option>
             <option value="wrongOnly">只練錯題</option>
             <option value="favOnly">⭐ 只看收藏</option>
             <option value="hiddenOnly">🙈 只看已隱藏（管理用）</option>
@@ -264,6 +265,7 @@
 
       <div class="home-summary">
         <span>符合篩選題數: <b id="matchCount">0</b></span>
+        <span>🆕 沒碰過: <b id="homeUntouched">0</b></span>
         <span>⭐ 收藏: <b id="homeFav">0</b></span>
         <span>❌ 累積錯題: <b id="homeWrong">0</b></span>
         <span>🙈 已隱藏: <b id="homeHidden">0</b></span>
@@ -271,7 +273,6 @@
 
       <button class="primary start-btn" id="startBtn">▶ 開始刷題（隨機順序）</button>
       <button class="start-btn" id="startYearDescBtn">▶ 開始刷題（年份新到舊）</button>
-      <button class="start-btn" id="startInOrderBtn">▶ 開始刷題（依原順序）</button>
     </div>
   </div>
 
@@ -399,6 +400,17 @@ function populateFilters() {
   refillDependent();
 }
 
+// 「碰過」= 答對過、答錯過、收藏、標記隱藏、或寫過筆記，任一即算
+function isTouched(q) {
+  return !!(
+    progress.correct[q.id] ||
+    progress.wrong[q.id] ||
+    progress.favorites[q.id] ||
+    progress.hidden[q.id] ||
+    (progress.notes[q.id] || "").trim()
+  );
+}
+
 function getFilteredQuestions() {
   const selectedSubjects = getCheckedValues("subjectCheckboxes");
   const selectedYears = getCheckedValues("yearCheckboxes");
@@ -412,6 +424,7 @@ function getFilteredQuestions() {
     if (selectedYears.length && !selectedYears.includes(String(q.year))) return false;
     if (section && q.section !== section) return false;
     if (hospital && q.hospital !== hospital) return false;
+    if (mode === "untouched" && isTouched(q)) return false;
     if (mode === "wrongOnly" && !progress.wrong[q.id]) return false;
     if (mode === "favOnly" && !progress.favorites[q.id]) return false;
     if (mode === "hiddenOnly" && !progress.hidden[q.id]) return false;
@@ -427,6 +440,7 @@ function getFilteredQuestions() {
 function updateHomeSummary() {
   const filtered = getFilteredQuestions();
   document.getElementById("matchCount").textContent = filtered.length;
+  document.getElementById("homeUntouched").textContent = questions.filter(q => !isTouched(q)).length;
   document.getElementById("homeFav").textContent = Object.keys(progress.favorites).length;
   document.getElementById("homeWrong").textContent = Object.keys(progress.wrong).length;
   document.getElementById("homeHidden").textContent = Object.keys(progress.hidden).length;
@@ -627,7 +641,6 @@ function markAndNext(q, isCorrect) {
 
 document.getElementById("startBtn").onclick = () => startQuiz("shuffle");
 document.getElementById("startYearDescBtn").onclick = () => startQuiz("yearDesc");
-document.getElementById("startInOrderBtn").onclick = () => startQuiz("original");
 document.getElementById("homeBtn").onclick = showHome;
 document.getElementById("exportNotesBtn").onclick = () => {
   const ids = Object.keys(progress.notes).filter(id => (progress.notes[id] || "").trim());
