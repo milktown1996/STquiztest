@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>季考閱片刷題</title>
+<style>
+  :root {
+    --bg: #0f1216;
+    --panel: #1a1f27;
+    --panel2: #222834;
+    --text: #e8ebf0;
+    --muted: #8b93a3;
+    --accent: #4f8cff;
+    --good: #35c37a;
+    --bad: #e5534b;
+    --star: #f2c94c;
+    --border: #2c3341;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Noto Sans TC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+  header h1 { font-size: 18px; margin: 0; margin-right: auto; }
+  select, button {
+    background: var(--panel2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  button.primary { background: var(--accent); border-color: var(--accent); color: white; font-weight: 600; }
+  button.good { background: var(--good); border-color: var(--good); color: white; }
+  button.bad { background: var(--bad); border-color: var(--bad); color: white; }
+  button.star-btn { font-size: 16px; }
+  button.star-btn.active { background: var(--star); border-color: var(--star); color: #3a2e00; }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  main { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .stat-bar {
+    display: flex; gap: 16px; font-size: 13px; color: var(--muted);
+    margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .stat-bar span b { color: var(--text); }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .progress { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .images { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+  .images img {
+    max-width: 100%;
+    max-height: 480px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    flex: 1 1 auto;
+  }
+  .meta { font-size: 13px; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .answer-wrap {
+    position: relative;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px dashed var(--border);
+  }
+  .answer-wrap img {
+    width: 100%;
+    display: block;
+    filter: blur(24px) brightness(0.5);
+    transform: scale(1.02);
+    transition: filter 0.25s ease;
+  }
+  .answer-wrap.revealed img {
+    filter: none;
+  }
+  .answer-cover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.25);
+    cursor: pointer;
+  }
+  .answer-cover span {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .empty { text-align: center; color: var(--muted); padding: 60px 20px; }
+  footer { text-align: center; color: var(--muted); font-size: 12px; padding: 30px; }
+  .badge {
+    display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px;
+    background: var(--panel2); border: 1px solid var(--border); color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧠 季考閱片刷題</h1>
+  <select id="subjectFilter"><option value="">全部科目</option></select>
+  <select id="sectionFilter"><option value="">全部單元</option></select>
+  <select id="hospitalFilter"><option value="">全部院區</option></select>
+  <select id="modeFilter">
+    <option value="all">全部題目</option>
+    <option value="wrongOnly">只練錯題</option>
+    <option value="favOnly">⭐ 只看收藏</option>
+  </select>
+  <button id="shuffleBtn">🔀 隨機出題</button>
+  <button id="resetStatBtn">重置紀錄</button>
+</header>
+
+<main>
+  <div class="stat-bar">
+    <span>本次已答: <b id="statAnswered">0</b></span>
+    <span>答對: <b id="statCorrect">0</b></span>
+    <span>答錯: <b id="statWrong">0</b></span>
+    <span>累積錯題數: <b id="statWrongTotal">0</b></span>
+    <span>⭐ 收藏題數: <b id="statFav">0</b></span>
+  </div>
+
+  <div id="quizArea"></div>
+</main>
+
+<footer>資料來源：季考閱片題目順序（全科目）／僅供個人複習使用</footer>
+
+<script>
+const STORAGE_KEY = "quiz_progress_v3";
+
+let questions = [];
+let pool = [];
+let idx = 0;
+
+function loadProgress() {
+  try {
+    return Object.assign(
+      { wrong: {}, correct: {}, favorites: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 },
+      JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}
+    );
+  } catch (e) {
+    return { wrong: {}, correct: {}, favorites: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 };
+  }
+}
+let progress = loadProgress();
+
+function saveProgress() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+
+function updateStatBar() {
+  document.getElementById("statAnswered").textContent = progress.sessionAnswered;
+  document.getElementById("statCorrect").textContent = progress.sessionCorrect;
+  document.getElementById("statWrong").textContent = progress.sessionWrong;
+  document.getElementById("statWrongTotal").textContent = Object.keys(progress.wrong).length;
+  document.getElementById("statFav").textContent = Object.keys(progress.favorites).length;
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function populateFilters() {
+  const subjectSel = document.getElementById("subjectFilter");
+  const sectionSel = document.getElementById("sectionFilter");
+  const hospSel = document.getElementById("hospitalFilter");
+
+  const subjects = [...new Set(questions.map(q => q.subject).filter(Boolean))].sort();
+  subjects.forEach(s => {
+    const o = document.createElement("option");
+    o.value = s; o.textContent = s;
+    subjectSel.appendChild(o);
+  });
+
+  function refillDependent() {
+    const subject = subjectSel.value;
+    const scoped = subject ? questions.filter(q => q.subject === subject) : questions;
+
+    const curSection = sectionSel.value;
+    const curHosp = hospSel.value;
+    sectionSel.innerHTML = '<option value="">全部單元</option>';
+    hospSel.innerHTML = '<option value="">全部院區</option>';
+
+    [...new Set(scoped.map(q => q.section).filter(Boolean))].sort().forEach(s => {
+      const o = document.createElement("option");
+      o.value = s; o.textContent = s;
+      sectionSel.appendChild(o);
+    });
+    [...new Set(scoped.map(q => q.hospital).filter(Boolean))].sort().forEach(h => {
+      const o = document.createElement("option");
+      o.value = h; o.textContent = h;
+      hospSel.appendChild(o);
+    });
+    if ([...sectionSel.options].some(o => o.value === curSection)) sectionSel.value = curSection;
+    if ([...hospSel.options].some(o => o.value === curHosp)) hospSel.value = curHosp;
+  }
+
+  subjectSel.addEventListener("change", () => { refillDependent(); applyFilters(false); });
+  refillDependent();
+}
+
+function applyFilters(doShuffle) {
+  const subject = document.getElementById("subjectFilter").value;
+  const section = document.getElementById("sectionFilter").value;
+  const hospital = document.getElementById("hospitalFilter").value;
+  const mode = document.getElementById("modeFilter").value;
+
+  let filtered = questions.filter(q => {
+    if (subject && q.subject !== subject) return false;
+    if (section && q.section !== section) return false;
+    if (hospital && q.hospital !== hospital) return false;
+    if (mode === "wrongOnly" && !progress.wrong[q.id]) return false;
+    if (mode === "favOnly" && !progress.favorites[q.id]) return false;
+    return true;
+  });
+
+  pool = doShuffle ? shuffle(filtered) : filtered;
+  idx = 0;
+  renderCard();
+}
+
+function renderCard() {
+  const area = document.getElementById("quizArea");
+  if (pool.length === 0) {
+    area.innerHTML = `<div class="card empty">目前篩選條件下沒有題目 😶</div>`;
+    return;
+  }
+  if (idx >= pool.length) idx = 0;
+  const q = pool[idx];
+
+  const caseImgsHtml = q.caseImages.map(img => `<img src="images/${encodeURIComponent(img)}" loading="lazy">`).join("");
+  const disputedBadge = q.disputed ? `<span class="badge" style="border-color:#e5a53b;color:#e5a53b">答案疑慮</span>` : "";
+  const wrongBadge = progress.wrong[q.id] ? `<span class="badge" style="border-color:var(--bad);color:var(--bad)">曾答錯</span>` : "";
+  const isFav = !!progress.favorites[q.id];
+
+  area.innerHTML = `
+    <div class="card">
+      <div class="progress">第 ${idx + 1} / ${pool.length} 題　${q.id}</div>
+      <div class="meta">
+        <span class="badge">${q.subject || ""}</span>
+        <span class="badge">${q.section || ""}</span>
+        <span class="badge">${q.hospital || ""} ${q.year || ""}</span>
+        ${disputedBadge}${wrongBadge}
+      </div>
+      <div class="images">${caseImgsHtml}</div>
+
+      <div class="answer-wrap" id="answerWrap">
+        <img src="images/${encodeURIComponent(q.answerImage)}">
+        <div class="answer-cover" id="answerCover"><span>👁 點擊看答案</span></div>
+      </div>
+
+      <div class="controls">
+        <button class="star-btn ${isFav ? "active" : ""}" id="favBtn">${isFav ? "⭐ 已收藏" : "☆ 收藏此題"}</button>
+        <button class="good" id="correctBtn" disabled>✅ 我答對了</button>
+        <button class="bad" id="wrongBtn" disabled>❌ 我答錯了</button>
+        <button id="nextBtn">下一題 ▶</button>
+      </div>
+    </div>
+  `;
+
+  document.getElementById("answerCover").onclick = () => {
+    document.getElementById("answerWrap").classList.add("revealed");
+    document.getElementById("answerCover").style.display = "none";
+    document.getElementById("correctBtn").disabled = false;
+    document.getElementById("wrongBtn").disabled = false;
+  };
+  document.getElementById("favBtn").onclick = () => toggleFavorite(q);
+  document.getElementById("correctBtn").onclick = () => markAndNext(q, true);
+  document.getElementById("wrongBtn").onclick = () => markAndNext(q, false);
+  document.getElementById("nextBtn").onclick = () => { idx++; renderCard(); };
+}
+
+function toggleFavorite(q) {
+  if (progress.favorites[q.id]) {
+    delete progress.favorites[q.id];
+  } else {
+    progress.favorites[q.id] = true;
+  }
+  saveProgress();
+  updateStatBar();
+  const btn = document.getElementById("favBtn");
+  const isFav = !!progress.favorites[q.id];
+  btn.classList.toggle("active", isFav);
+  btn.textContent = isFav ? "⭐ 已收藏" : "☆ 收藏此題";
+  // 若目前正在「只看收藏」模式，取消收藏後應立即從當前作答清單移除
+  if (document.getElementById("modeFilter").value === "favOnly" && !isFav) {
+    pool.splice(idx, 1);
+    renderCard();
+  }
+}
+
+function markAndNext(q, isCorrect) {
+  progress.sessionAnswered++;
+  if (isCorrect) {
+    progress.sessionCorrect++;
+    delete progress.wrong[q.id];
+    progress.correct[q.id] = true;
+  } else {
+    progress.sessionWrong++;
+    progress.wrong[q.id] = true;
+  }
+  saveProgress();
+  updateStatBar();
+  idx++;
+  renderCard();
+}
+
+document.getElementById("shuffleBtn").onclick = () => applyFilters(true);
+document.getElementById("sectionFilter").onchange = () => applyFilters(false);
+document.getElementById("hospitalFilter").onchange = () => applyFilters(false);
+document.getElementById("modeFilter").onchange = () => applyFilters(false);
+document.getElementById("resetStatBtn").onclick = () => {
+  if (confirm("確定要重置作答紀錄與錯題統計嗎？（收藏清單不會被清除）")) {
+    progress.wrong = {};
+    progress.correct = {};
+    progress.sessionAnswered = 0;
+    progress.sessionCorrect = 0;
+    progress.sessionWrong = 0;
+    saveProgress();
+    updateStatBar();
+    applyFilters(false);
+  }
+};
+
+fetch("questions.json")
+  .then(r => r.json())
+  .then(data => {
+    questions = data;
+    populateFilters();
+    updateStatBar();
+    applyFilters(true);
+  })
+  .catch(err => {
+    document.getElementById("quizArea").innerHTML = `<div class="card empty">載入題庫失敗：${err}</div>`;
+  });
+</script>
+
+</body>
+</html>
