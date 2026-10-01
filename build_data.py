@@ -52,7 +52,7 @@ diagnosis_index = {}
 id_embed_re = re.compile(r"!\[\[(ST\d{8,10})\]\]")
 for f in TOPIC_DIR.glob("ST_*.md"):
     try:
-        text = f.read_text(encoding="utf-8")
+        text = f.read_text(encoding="utf-8-sig")
     except UnicodeDecodeError:
         continue
     fm, body = parse_frontmatter(text)
@@ -70,7 +70,7 @@ subject_counts = {}
 
 for f in sorted(ORDER_DIR.glob("*.md")):
     try:
-        text = f.read_text(encoding="utf-8")
+        text = f.read_text(encoding="utf-8-sig")
     except UnicodeDecodeError:
         continue
 

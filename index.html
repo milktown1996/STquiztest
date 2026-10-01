@@ -263,6 +263,10 @@
         </div>
       </div>
 
+      <div class="field-row">
+        <button id="clearFiltersBtn">🧹 清除所有篩選條件</button>
+      </div>
+
       <div class="home-summary">
         <span>符合篩選題數: <b id="matchCount">0</b></span>
         <span>🆕 沒碰過: <b id="homeUntouched">0</b></span>
@@ -396,6 +400,9 @@ function populateFilters() {
   hospSel.addEventListener("change", updateHomeSummary);
   document.getElementById("modeFilter").addEventListener("change", updateHomeSummary);
   document.getElementById("searchInput").addEventListener("input", updateHomeSummary);
+  // 「清除所有篩選條件」按下後，重建單元/院區選項（回到涵蓋全部題目的狀態）
+  document.getElementById("subjectCheckboxes")
+    .addEventListener("filters-cleared", refillDependent);
 
   refillDependent();
 }
@@ -638,6 +645,20 @@ function markAndNext(q, isCorrect) {
   idx++;
   renderCard();
 }
+
+document.getElementById("clearFiltersBtn").onclick = () => {
+  document.querySelectorAll("#subjectCheckboxes input, #yearCheckboxes input").forEach(i => {
+    i.checked = false;
+    i.closest(".chip").classList.remove("checked");
+  });
+  document.getElementById("sectionFilter").value = "";
+  document.getElementById("hospitalFilter").value = "";
+  document.getElementById("modeFilter").value = "all";
+  document.getElementById("searchInput").value = "";
+  // 科目清空後，單元/院區選項要回到涵蓋全部題目的狀態
+  document.getElementById("subjectCheckboxes").dispatchEvent(new Event("filters-cleared"));
+  updateHomeSummary();
+};
 
 document.getElementById("startBtn").onclick = () => startQuiz("shuffle");
 document.getElementById("startYearDescBtn").onclick = () => startQuiz("yearDesc");

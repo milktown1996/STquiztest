@@ -32,7 +32,7 @@ def parse_frontmatter(text):
 diagnosis_index = {}
 for f in TOPIC_DIR.glob("ST_*.md"):
     try:
-        text = f.read_text(encoding="utf-8")
+        text = f.read_text(encoding="utf-8-sig")
     except UnicodeDecodeError:
         continue
     fm, body = parse_frontmatter(text)
