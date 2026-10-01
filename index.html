@@ -178,6 +178,24 @@
     border-radius: 999px;
     font-size: 14px;
   }
+  /* 單題筆記 */
+  .note-panel { margin-top: 10px; }
+  .note-panel textarea {
+    width: 100%;
+    min-height: 90px;
+    resize: vertical;
+    background: var(--panel2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 1.6;
+    cursor: text;
+  }
+  .note-panel textarea:focus { outline: 1px solid var(--accent); }
+  button.note-btn.active { background: #6b4fbb; border-color: #6b4fbb; color: #fff; }
   .controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
   .controls button { padding: 7px 11px; font-size: 13px; }
   body.quiz-mode footer { padding: 12px; }
@@ -195,6 +213,7 @@
 <header id="appHeader">
   <h1>🧠 季考閱片刷題</h1>
   <button id="homeBtn" class="hidden">🏠 回首頁</button>
+  <button id="exportNotesBtn">📤 匯出筆記</button>
   <button id="resetStatBtn">重置紀錄</button>
 </header>
 
@@ -277,15 +296,22 @@ const STORAGE_KEY = "quiz_progress_v4";
 let questions = [];
 let pool = [];
 let idx = 0;
+// 本次作答中已揭曉過答案的題目：回上一題時維持已揭曉狀態，答對/答錯才不會又被鎖住
+let revealedIds = new Set();
+
+const DEFAULT_PROGRESS = {
+  wrong: {}, correct: {}, favorites: {}, hidden: {}, notes: {},
+  sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0
+};
 
 function loadProgress() {
   try {
     return Object.assign(
-      { wrong: {}, correct: {}, favorites: {}, hidden: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 },
+      structuredClone(DEFAULT_PROGRESS),
       JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}
     );
   } catch (e) {
-    return { wrong: {}, correct: {}, favorites: {}, hidden: {}, sessionAnswered: 0, sessionCorrect: 0, sessionWrong: 0 };
+    return structuredClone(DEFAULT_PROGRESS);
   }
 }
 let progress = loadProgress();
@@ -439,6 +465,7 @@ function startQuiz(order) {
   else if (order === "yearDesc") pool = sortByYearDesc(filtered);
   else pool = filtered;
   idx = 0;
+  revealedIds = new Set(); // 新一輪開始，答案一律重新遮蔽
   document.getElementById("homeView").classList.add("hidden");
   document.getElementById("quizView").classList.remove("hidden");
   document.getElementById("homeBtn").classList.remove("hidden");
@@ -464,6 +491,9 @@ function renderCard() {
   const wrongBadge = progress.wrong[q.id] ? `<span class="badge" style="border-color:var(--bad);color:var(--bad)">曾答錯</span>` : "";
   const isFav = !!progress.favorites[q.id];
   const isHidden = !!progress.hidden[q.id];
+  const noteText = progress.notes[q.id] || "";
+  const hasNote = !!noteText.trim();
+  const wasRevealed = revealedIds.has(q.id); // 已看過答案的題目，回頭時維持揭曉狀態
 
   area.innerHTML = `
     <div class="card">
@@ -478,8 +508,9 @@ function renderCard() {
         <div class="controls">
           <button class="star-btn ${isFav ? "active" : ""}" id="favBtn">${isFav ? "⭐ 已收藏" : "☆ 收藏此題"}</button>
           <button class="hide-btn ${isHidden ? "active" : ""}" id="hideBtn">${isHidden ? "🙈 已隱藏（點擊取消）" : "🙈 隱藏此題"}</button>
-          <button class="good" id="correctBtn" disabled>✅ 我答對了</button>
-          <button class="bad" id="wrongBtn" disabled>❌ 我答錯了</button>
+          <button class="note-btn ${hasNote ? "active" : ""}" id="noteBtn">📝 ${hasNote ? "已有筆記" : "筆記"}</button>
+          <button class="good" id="correctBtn" ${wasRevealed ? "" : "disabled"}>✅ 我答對了</button>
+          <button class="bad" id="wrongBtn" ${wasRevealed ? "" : "disabled"}>❌ 我答錯了</button>
           <button id="prevBtn" ${idx === 0 ? "disabled" : ""}>▲ 上一題</button>
           <button id="nextBtn">▼ 下一題</button>
         </div>
@@ -487,10 +518,14 @@ function renderCard() {
 
       <div class="film-strip" id="filmStrip">
         ${caseImgsHtml}
-        <div class="answer-slot" id="answerWrap">
+        <div class="answer-slot ${wasRevealed ? "revealed" : ""}" id="answerWrap">
           <img src="images/${encodeURIComponent(q.answerImage)}">
-          <div class="answer-cover" id="answerCover"><span>👁 點擊看答案</span></div>
+          <div class="answer-cover" id="answerCover" ${wasRevealed ? 'style="display:none"' : ""}><span>👁 點擊看答案</span></div>
         </div>
+      </div>
+
+      <div class="note-panel ${hasNote ? "" : "hidden"}" id="notePanel">
+        <textarea id="noteInput" placeholder="輸入這一題的筆記（自動儲存在這台裝置的瀏覽器）">${escapeHtml(noteText)}</textarea>
       </div>
     </div>
   `;
@@ -498,6 +533,21 @@ function renderCard() {
   document.getElementById("answerCover").onclick = revealAnswer;
   document.getElementById("favBtn").onclick = () => toggleFavorite(q);
   document.getElementById("hideBtn").onclick = () => toggleHidden(q);
+  document.getElementById("noteBtn").onclick = () => {
+    const panel = document.getElementById("notePanel");
+    panel.classList.toggle("hidden");
+    if (!panel.classList.contains("hidden")) document.getElementById("noteInput").focus();
+  };
+  document.getElementById("noteInput").addEventListener("input", (e) => {
+    const v = e.target.value;
+    if (v.trim()) progress.notes[q.id] = v;
+    else delete progress.notes[q.id];
+    saveProgress();
+    const btn = document.getElementById("noteBtn");
+    const has = !!(progress.notes[q.id] || "").trim();
+    btn.classList.toggle("active", has);
+    btn.textContent = has ? "📝 已有筆記" : "📝 筆記";
+  });
   document.getElementById("correctBtn").onclick = () => markAndNext(q, true);
   document.getElementById("wrongBtn").onclick = () => markAndNext(q, false);
   document.getElementById("nextBtn").onclick = () => { idx++; renderCard(); };
@@ -518,10 +568,17 @@ function renderCard() {
   }
 }
 
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+  ));
+}
+
 function revealAnswer() {
   const wrap = document.getElementById("answerWrap");
   const cover = document.getElementById("answerCover");
   if (!wrap || !cover || wrap.classList.contains("revealed")) return;
+  if (pool[idx]) revealedIds.add(pool[idx].id);
   wrap.classList.add("revealed");
   cover.style.display = "none";
   document.getElementById("correctBtn").disabled = false;
@@ -573,6 +630,26 @@ document.getElementById("startBtn").onclick = () => startQuiz("shuffle");
 document.getElementById("startYearDescBtn").onclick = () => startQuiz("yearDesc");
 document.getElementById("startInOrderBtn").onclick = () => startQuiz("original");
 document.getElementById("homeBtn").onclick = showHome;
+document.getElementById("exportNotesBtn").onclick = () => {
+  const ids = Object.keys(progress.notes).filter(id => (progress.notes[id] || "").trim());
+  if (ids.length === 0) {
+    alert("目前沒有任何筆記");
+    return;
+  }
+  const byId = Object.fromEntries(questions.map(q => [q.id, q]));
+  const lines = ["# 季考閱片刷題筆記", ""];
+  ids.sort().forEach(id => {
+    const q = byId[id];
+    const meta = q ? `${q.subject} / ${q.hospital} ${q.year}${q.diagnosis ? " / " + q.diagnosis : ""}` : "";
+    lines.push(`## ${id}${meta ? "　(" + meta + ")" : ""}`, "", progress.notes[id].trim(), "");
+  });
+  const blob = new Blob([lines.join("\n")], { type: "text/markdown;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `季考閱片刷題筆記_${new Date().toISOString().slice(0, 10)}.md`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+};
 document.getElementById("resetStatBtn").onclick = () => {
   if (confirm("確定要重置作答紀錄與錯題統計嗎？（收藏與隱藏清單不會被清除）")) {
     progress.wrong = {};
