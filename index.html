@@ -207,6 +207,7 @@
       </div>
 
       <button class="primary start-btn" id="startBtn">▶ 開始刷題（隨機順序）</button>
+      <button class="start-btn" id="startYearDescBtn">▶ 開始刷題（年份新到舊）</button>
       <button class="start-btn" id="startInOrderBtn">▶ 開始刷題（依原順序）</button>
     </div>
   </div>
@@ -373,13 +374,24 @@ function showHome() {
   updateHomeSummary();
 }
 
-function startQuiz(doShuffle) {
+function sortByYearDesc(arr) {
+  return arr.slice().sort((a, b) => {
+    const yearDiff = (parseInt(b.year, 10) || 0) - (parseInt(a.year, 10) || 0);
+    if (yearDiff !== 0) return yearDiff;
+    return b.id.localeCompare(a.id); // 同年份內，id 本身帶日期字串，新到舊
+  });
+}
+
+function startQuiz(order) {
+  // order: "shuffle" | "original" | "yearDesc"
   const filtered = getFilteredQuestions();
   if (filtered.length === 0) {
     alert("目前篩選條件下沒有題目");
     return;
   }
-  pool = doShuffle ? shuffle(filtered) : filtered;
+  if (order === "shuffle") pool = shuffle(filtered);
+  else if (order === "yearDesc") pool = sortByYearDesc(filtered);
+  else pool = filtered;
   idx = 0;
   document.getElementById("homeView").classList.add("hidden");
   document.getElementById("quizView").classList.remove("hidden");
@@ -485,8 +497,9 @@ function markAndNext(q, isCorrect) {
   renderCard();
 }
 
-document.getElementById("startBtn").onclick = () => startQuiz(true);
-document.getElementById("startInOrderBtn").onclick = () => startQuiz(false);
+document.getElementById("startBtn").onclick = () => startQuiz("shuffle");
+document.getElementById("startYearDescBtn").onclick = () => startQuiz("yearDesc");
+document.getElementById("startInOrderBtn").onclick = () => startQuiz("original");
 document.getElementById("homeBtn").onclick = showHome;
 document.getElementById("resetStatBtn").onclick = () => {
   if (confirm("確定要重置作答紀錄與錯題統計嗎？（收藏與隱藏清單不會被清除）")) {
