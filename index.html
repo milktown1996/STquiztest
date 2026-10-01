@@ -507,7 +507,7 @@ function renderCard() {
         </div>
         <div class="controls">
           <button class="star-btn ${isFav ? "active" : ""}" id="favBtn">${isFav ? "⭐ 已收藏" : "☆ 收藏此題"}</button>
-          <button class="hide-btn ${isHidden ? "active" : ""}" id="hideBtn">${isHidden ? "🙈 已隱藏（點擊取消）" : "🙈 隱藏此題"}</button>
+          <button class="hide-btn ${isHidden ? "active" : ""}" id="hideBtn">${isHidden ? "🙈 已標記隱藏，下輪生效（點擊取消）" : "🙈 隱藏此題"}</button>
           <button class="note-btn ${hasNote ? "active" : ""}" id="noteBtn">📝 ${hasNote ? "已有筆記" : "筆記"}</button>
           <button class="good" id="correctBtn" ${wasRevealed ? "" : "disabled"}>✅ 我答對了</button>
           <button class="bad" id="wrongBtn" ${wasRevealed ? "" : "disabled"}>❌ 我答錯了</button>
@@ -605,8 +605,7 @@ function toggleHidden(q) {
     progress.hidden[q.id] = true;
   }
   saveProgress();
-  // 若目前模式會因隱藏狀態改變而應該離開當前列表，直接移除並跳下一題
-  pool.splice(idx, 1);
+  // 只標記、不立即移出本輪題目；下次重新開始刷題時才會依篩選條件排除
   renderCard();
 }
 
