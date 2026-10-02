@@ -66305,7 +66305,7 @@
     "section": "GI (15-22)",
     "year": "201602",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ascites",
     "caseImages": [
@@ -66579,7 +66579,7 @@
     "section": "US (39-42)",
     "year": "201602",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Nutcracker syndrome",
     "caseImages": [
@@ -66650,7 +66650,7 @@
     "section": "PE (43-46)",
     "year": "201602",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mucopolysaccharidosis",
     "caseImages": [
@@ -66946,7 +66946,7 @@
     "section": "GI (15-22)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gastrointestinal stromal tumor (GIST)",
     "caseImages": [
@@ -67003,7 +67003,7 @@
     "section": "GI (15-22)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "# Foreign body 【GI】",
     "caseImages": [
@@ -67047,7 +67047,7 @@
     "section": "GI (15-22)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lymphoma 【GI】",
     "caseImages": [
@@ -67062,7 +67062,7 @@
     "section": "MS (23-30)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Synovial osteochondromatosis",
     "caseImages": [
@@ -67106,7 +67106,7 @@
     "section": "MS (23-30)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteitis fibrosa cystica (Brown tumor)",
     "caseImages": [
@@ -67121,7 +67121,7 @@
     "section": "MS (23-30)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pigmented villonodular synovitis (PVNS)",
     "caseImages": [
@@ -67135,7 +67135,7 @@
     "section": "MS (23-30)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pigmented villonodular synovitis (PVNS)",
     "caseImages": [
@@ -67205,7 +67205,7 @@
     "section": "GU (31-34)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Urothelial carcinoma (UCC)",
     "caseImages": [
@@ -67783,7 +67783,7 @@
     "section": "MS (23-30)",
     "year": "201608",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Leri-Weill syndrome (dyschondrosteosis)",
     "caseImages": [
@@ -67881,7 +67881,7 @@
     "section": "GU (31-34)",
     "year": "201608",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mature teratoma with malignant transformation",
     "caseImages": [
@@ -68496,7 +68496,7 @@
     "section": "MS (23-30)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Calcific tendonitis",
     "caseImages": [
@@ -68526,7 +68526,7 @@
     "section": "MS (23-30)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteochondroma",
     "caseImages": [
@@ -68599,7 +68599,7 @@
     "section": "GU (31-34)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lower vaginal atresia with hematometra and hematocolpos",
     "caseImages": [
@@ -68613,9 +68613,9 @@
     "section": "GU (31-34)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
-    "diagnosis": "Uterine leiomyosarcoma",
+    "diagnosis": "Uterine leiomyoma",
     "caseImages": [
       "ST2016113201.jpg"
     ],
@@ -68627,7 +68627,7 @@
     "section": "GU (31-34)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Renal oncocytoma",
     "caseImages": [
@@ -69154,7 +69154,7 @@
     "section": "GI (15-22)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pseudoaneurysm 【GI】",
     "caseImages": [
@@ -69182,7 +69182,7 @@
     "section": "GI (15-22)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cystic duct stump leaks (CDSLs)",
     "caseImages": [
@@ -69266,7 +69266,7 @@
     "section": "MS (23-30)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Alveolar soft part sarcoma",
     "caseImages": [
@@ -69308,7 +69308,7 @@
     "section": "GU (31-34)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "|-",
     "caseImages": [
@@ -69364,7 +69364,7 @@
     "section": "CV (35-38)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Kawasaki disease",
     "caseImages": [
@@ -69406,7 +69406,7 @@
     "section": "CV (35-38)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Arrhythmogenic right ventricular cardiomyopathy",
     "caseImages": [
@@ -69816,7 +69816,7 @@
     "section": "GI (15-22)",
     "year": "201705",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Insulinoma",
     "caseImages": [
@@ -69872,7 +69872,7 @@
     "section": "GI (15-22)",
     "year": "201705",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "GB carcinoma",
     "caseImages": [
@@ -69915,7 +69915,7 @@
     "section": "MS (23-30)",
     "year": "201705",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Fibrous dysplasia",
     "caseImages": [
@@ -70014,7 +70014,7 @@
     "section": "GU (31-34)",
     "year": "201705",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gestational trophoblastic disease",
     "caseImages": [
@@ -71207,7 +71207,7 @@
     "section": "GI (15-22)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Groove pancreatitis",
     "caseImages": [
@@ -71917,7 +71917,7 @@
     "section": "GI (15-22)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gastric ulcer",
     "caseImages": [
@@ -71974,7 +71974,7 @@
     "section": "GI (15-22)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Acute cholecystitis",
     "caseImages": [
@@ -72016,7 +72016,7 @@
     "section": "MS (23-30)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Schwannoma 【MS】",
     "caseImages": [
@@ -72086,7 +72086,7 @@
     "section": "MS (23-30)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Liposarcoma",
     "caseImages": [
@@ -72156,7 +72156,7 @@
     "section": "GU (31-34)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ovarian abscess with actinomycosis",
     "caseImages": [
@@ -72170,7 +72170,7 @@
     "section": "GU (31-34)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Endometrial cancer with right iliac bone metastasis",
     "caseImages": [
@@ -72240,7 +72240,7 @@
     "section": "US (39-42)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gastrointestinal stromal tumor (GIST)",
     "caseImages": [
@@ -72326,7 +72326,7 @@
     "section": "PE (43-46)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Achondroplasia",
     "caseImages": [
@@ -72340,7 +72340,7 @@
     "section": "PE (43-46)",
     "year": "201802",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mature cystic teratoma 【GU】",
     "caseImages": [
@@ -72694,7 +72694,7 @@
     "section": "GI (15-22)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gallstone ileus",
     "caseImages": [
@@ -72708,7 +72708,7 @@
     "section": "GI (15-22)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Heterotopic pancreas",
     "caseImages": [
@@ -72736,7 +72736,7 @@
     "section": "MS (23-30)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hypertrophic osteoarthropathy",
     "caseImages": [
@@ -72919,7 +72919,7 @@
     "section": "CV (35-38)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Left ventricular pseudoaneurysm",
     "caseImages": [
@@ -73047,7 +73047,7 @@
     "section": "PE (43-46)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Achondroplasia",
     "caseImages": [
@@ -73441,7 +73441,7 @@
     "section": "MS (23-30)",
     "year": "201808",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gouty arthritis",
     "caseImages": [
@@ -73546,7 +73546,7 @@
     "section": "MS (23-30)",
     "year": "201808",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Achondroplasia",
     "caseImages": [
@@ -73561,7 +73561,7 @@
     "section": "GU (31-34)",
     "year": "201808",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Crossed fused renal ectopia",
     "caseImages": [
@@ -73603,7 +73603,7 @@
     "section": "GU (31-34)",
     "year": "201808",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "MURCS association ( or Mayer-Rokitansky-Kuster-Hauser syndrome type 2)",
     "caseImages": [
@@ -74077,7 +74077,7 @@
     "section": "GI (15-22)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "IHD stones with biliary tree tumor",
     "caseImages": [
@@ -74091,7 +74091,7 @@
     "section": "GI (15-22)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Sigmoid diverticulitis with vesicosigmoid fistula",
     "caseImages": [
@@ -74246,7 +74246,7 @@
     "section": "MS (23-30)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Rickets",
     "caseImages": [
@@ -74279,9 +74279,9 @@
     "diagnosis": "Adrenal ganglioneuroma",
     "caseImages": [
       "ST2018113101.jpg",
-      "ST2018113103.jpg"
+      "ST2018113102.jpg"
     ],
-    "answerImage": "ST2018113102.jpg"
+    "answerImage": "ST2018113103.jpg"
   },
   {
     "id": "ST20181132",
@@ -74304,7 +74304,7 @@
     "section": "GU (31-34)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Urothelial carcinoma (UCC)",
     "caseImages": [
@@ -74774,7 +74774,7 @@
     "section": "GI (15-22)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mixed HCC-cholangiocarcinoma",
     "caseImages": [
@@ -74858,7 +74858,7 @@
     "section": "GI (15-22)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pancreatic cancer (adenocarcinoma)",
     "caseImages": [
@@ -74872,7 +74872,7 @@
     "section": "MS (23-30)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cystic neurofibroma",
     "caseImages": [
@@ -74971,7 +74971,7 @@
     "section": "MS (23-30)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Enchondromatosis (Ollier disease)",
     "caseImages": [
@@ -74985,7 +74985,7 @@
     "section": "GU (31-34)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Adrenal adenoma",
     "caseImages": [
@@ -75550,7 +75550,7 @@
     "section": "GI (15-22)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Diverticulitis",
     "caseImages": [
@@ -75564,7 +75564,7 @@
     "section": "GI (15-22)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gastric ischemia",
     "caseImages": [
@@ -75578,7 +75578,7 @@
     "section": "MS (23-30)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Enchondromatosis (Ollier disease)",
     "caseImages": [
@@ -75663,7 +75663,7 @@
     "section": "MS (23-30)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pigmented villonodular synovitis (PVNS)",
     "caseImages": [
@@ -75677,7 +75677,7 @@
     "section": "MS (23-30)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteopetrosis",
     "caseImages": [
@@ -75691,7 +75691,7 @@
     "section": "GU (31-34)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Nutcracker syndrome",
     "caseImages": [
@@ -75705,7 +75705,7 @@
     "section": "GU (31-34)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Vasitis",
     "caseImages": [
@@ -75719,7 +75719,7 @@
     "section": "GU (31-34)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tuberculosis of urinary tract",
     "caseImages": [
@@ -75733,7 +75733,7 @@
     "section": "GU (31-34)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Papillary renal cell carcinoma",
     "caseImages": [
@@ -76214,7 +76214,7 @@
     "section": "GI (15-22)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hepatic epithelioid hemangioendothelioma",
     "caseImages": [
@@ -76301,7 +76301,7 @@
     "section": "MS (23-30)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cavernous hemangioma (Soft tissue)",
     "caseImages": [
@@ -76357,7 +76357,7 @@
     "section": "MS (23-30)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Synovial osteochondromatosis",
     "caseImages": [
@@ -76413,7 +76413,7 @@
     "section": "GU (31-34)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "|-",
     "caseImages": [
@@ -76882,7 +76882,7 @@
     "section": "GI (15-22)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Meckel’s diverticulum",
     "caseImages": [
@@ -77071,7 +77071,7 @@
     "section": "MS (23-30)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hemophilic arthropathy",
     "caseImages": [
@@ -77185,7 +77185,7 @@
     "section": "CV (35-38)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Primary pulmonary hypertension",
     "caseImages": [
@@ -77227,7 +77227,7 @@
     "section": "US (39-42)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pseudomyxoma peritonei",
     "caseImages": [
@@ -77269,7 +77269,7 @@
     "section": "US (39-42)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pneumatosis intestinalis",
     "caseImages": [
@@ -77674,7 +77674,7 @@
     "section": "GI (15-22)",
     "year": "202002",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Neurogenic tumor 【GI】",
     "caseImages": [
@@ -77745,7 +77745,7 @@
     "section": "MS (23-30)",
     "year": "202002",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hemochomatosis",
     "caseImages": [
@@ -77789,7 +77789,7 @@
     "section": "MS (23-30)",
     "year": "202002",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteochondroma",
     "caseImages": [
@@ -77817,7 +77817,7 @@
     "section": "MS (23-30)",
     "year": "202002",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Bone infart",
     "caseImages": [
@@ -78031,7 +78031,7 @@
     "section": "PE (43-46)",
     "year": "202002",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Undescended testicle (Cryptorchidism)",
     "caseImages": [
@@ -78380,7 +78380,7 @@
     "section": "GI (15-22)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pancreatic intraductal papillary mucinous neoplasm (IPMN)",
     "caseImages": [
@@ -78394,7 +78394,7 @@
     "section": "GI (15-22)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Peribiliary cysts",
     "caseImages": [
@@ -78453,7 +78453,7 @@
     "section": "MS (23-30)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteoarthritis",
     "caseImages": [
@@ -78467,7 +78467,7 @@
     "section": "MS (23-30)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteopenia",
     "caseImages": [
@@ -78509,7 +78509,7 @@
     "section": "MS (23-30)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Bursal osteochondromatosis",
     "caseImages": [
@@ -79041,7 +79041,7 @@
     "section": "GI (15-22)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Retroperitoneal liposarcoma",
     "caseImages": [
@@ -79071,7 +79071,7 @@
     "section": "GI (15-22)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Small bowel volvulus",
     "caseImages": [
@@ -79129,7 +79129,7 @@
     "section": "GI (15-22)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Arteriobiliary fistula",
     "caseImages": [
@@ -79270,7 +79270,7 @@
     "section": "GU (31-34)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Granulosa cell tumor of the ovary",
     "caseImages": [
@@ -79299,7 +79299,7 @@
     "section": "GU (31-34)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Renal AV shunt type III",
     "caseImages": [
@@ -79854,7 +79854,7 @@
     "section": "GI (15-22)",
     "year": "202011",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Omental infarction",
     "caseImages": [
@@ -79924,7 +79924,7 @@
     "section": "MS (23-30)",
     "year": "202011",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Synovial osteochondromatosis",
     "caseImages": [
@@ -80068,7 +80068,7 @@
     "section": "CV (35-38)",
     "year": "202011",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Dilated cardiomyopathy",
     "caseImages": [
@@ -80643,7 +80643,7 @@
     "section": "MS (23-30)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Morel-Lavallée lesion",
     "caseImages": [
@@ -80685,7 +80685,7 @@
     "section": "GU (31-34)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Renal hemangioma",
     "caseImages": [
@@ -80699,7 +80699,7 @@
     "section": "GU (31-34)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intraperitoneal bladder rupture",
     "caseImages": [
@@ -80713,7 +80713,7 @@
     "section": "GU (31-34)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Endometriosis",
     "caseImages": [
@@ -80727,7 +80727,7 @@
     "section": "GU (31-34)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Testicular lymphoma",
     "caseImages": [
@@ -80839,7 +80839,7 @@
     "section": "US (39-42)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Horseshoe kidney",
     "caseImages": [
@@ -81235,14 +81235,14 @@
     "section": "GI (15-22)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hepatocellular carcinoma (HCC) 【GI】",
     "caseImages": [
       "ST2021062001.jpg",
-      "ST2021062003.jpg"
+      "ST2021062002.jpg"
     ],
-    "answerImage": "ST2021062002.jpg"
+    "answerImage": "ST2021062003.jpg"
   },
   {
     "id": "ST20210621",
@@ -81334,7 +81334,7 @@
     "section": "MS (23-30)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Morel-Lavallée lesion",
     "caseImages": [
@@ -82043,7 +82043,7 @@
     "section": "MS (23-30)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tenosynovitis",
     "caseImages": [
@@ -82071,7 +82071,7 @@
     "section": "MS (23-30)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Rice bodies (due to chronic synovitis)",
     "caseImages": [
@@ -82099,7 +82099,7 @@
     "section": "GU (31-34)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lipoleiomyoma",
     "caseImages": [
@@ -82141,7 +82141,7 @@
     "section": "GU (31-34)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Renal arteriovenous fistula",
     "caseImages": [
@@ -82633,7 +82633,7 @@
     "hospital": "北榮",
     "disputed": false,
     "isExchange": false,
-    "diagnosis": "Mirizzi syndrome",
+    "diagnosis": "",
     "caseImages": [
       "ST2021111801.jpg"
     ],
@@ -82743,7 +82743,7 @@
     "section": "MS (23-30)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Heterotopic ossification",
     "caseImages": [
@@ -82757,7 +82757,7 @@
     "section": "MS (23-30)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Polyostotic fibrous dysplasia with secondary osteosarcoma",
     "caseImages": [
@@ -82829,7 +82829,7 @@
     "section": "GU (31-34)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Yolk sac tumor",
     "caseImages": [
@@ -83310,7 +83310,7 @@
     "section": "GI (15-22)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cecal volvulus",
     "caseImages": [
@@ -83366,7 +83366,7 @@
     "section": "GI (15-22)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hepatic angiosarcoma",
     "caseImages": [
@@ -83380,7 +83380,7 @@
     "section": "GI (15-22)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mucinous adenocarcinoma",
     "caseImages": [
@@ -83423,7 +83423,7 @@
     "section": "MS (23-30)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intratendinous ganglion cyst",
     "caseImages": [
@@ -83465,7 +83465,7 @@
     "section": "MS (23-30)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mucopolysaccharidosis",
     "caseImages": [
@@ -83522,7 +83522,7 @@
     "section": "GU (31-34)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mixed epithelial and stromal tumor of kidney",
     "caseImages": [
@@ -84017,7 +84017,7 @@
     "section": "GI (15-22)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Didelphys uterus",
     "caseImages": [
@@ -84031,7 +84031,7 @@
     "section": "GI (15-22)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Vasitis with epididymitis",
     "caseImages": [
@@ -84045,7 +84045,7 @@
     "section": "GI (15-22)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Colovesicle fistula",
     "caseImages": [
@@ -84073,7 +84073,7 @@
     "section": "GI (15-22)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Omental infarction",
     "caseImages": [
@@ -84199,7 +84199,7 @@
     "section": "MS (23-30)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Synovial sarcoma",
     "caseImages": [
@@ -84214,7 +84214,7 @@
     "section": "MS (23-30)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteopoikilosis",
     "caseImages": [
@@ -84256,7 +84256,7 @@
     "section": "GU (31-34)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Port seeding of T.C.C.",
     "caseImages": [
@@ -84270,7 +84270,7 @@
     "section": "GU (31-34)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Renal cell carcinoma (RCC)",
     "caseImages": [
@@ -84313,7 +84313,7 @@
     "section": "CV (35-38)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Left atrial appendage thrombus",
     "caseImages": [
@@ -84397,7 +84397,7 @@
     "section": "PE (43-46)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Meconium peritonitis",
     "caseImages": [
@@ -84734,7 +84734,7 @@
     "section": "GI (15-22)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intussusception 【GI】",
     "caseImages": [
@@ -84764,7 +84764,7 @@
     "section": "GI (15-22)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pseudoaneurysm 【GI】",
     "caseImages": [
@@ -84785,9 +84785,9 @@
     "caseImages": [
       "ST2022082001.jpg",
       "ST2022082003.jpg",
-      "ST2022082004.jpg"
+      "ST2022082002.jpg"
     ],
-    "answerImage": "ST2022082002.jpg"
+    "answerImage": "ST2022082004.jpg"
   },
   {
     "id": "ST20220821",
@@ -84795,7 +84795,7 @@
     "section": "GI (15-22)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Sigmoid colon perforation",
     "caseImages": [
@@ -84838,7 +84838,7 @@
     "section": "MS (23-30)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Humeral pseudocyst",
     "caseImages": [
@@ -84852,7 +84852,7 @@
     "section": "MS (23-30)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "SAPHO",
     "caseImages": [
@@ -84951,7 +84951,7 @@
     "section": "GU (31-34)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Adrenal myelolipoma",
     "caseImages": [
@@ -85418,7 +85418,7 @@
     "section": "GI (15-22)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Obturator hernia",
     "caseImages": [
@@ -85447,7 +85447,7 @@
     "section": "GI (15-22)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Abernethy malformation",
     "caseImages": [
@@ -85645,7 +85645,7 @@
     "section": "GU (31-34)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lymphoma【GU】",
     "caseImages": [
@@ -85687,7 +85687,7 @@
     "section": "GU (31-34)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "IgG4-related disease",
     "caseImages": [
@@ -85799,7 +85799,7 @@
     "section": "US (39-42)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Adrenal adenoma",
     "caseImages": [
@@ -86151,7 +86151,7 @@
     "section": "GI (15-22)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pylephlebitis",
     "caseImages": [
@@ -86193,9 +86193,9 @@
     "section": "GI (15-22)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
-    "diagnosis": "Internal hernia",
+    "diagnosis": "Paraduodenal hernia",
     "caseImages": [
       "ST2023022001.jpg"
     ],
@@ -86306,7 +86306,7 @@
     "section": "MS (23-30)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Chondroblastoma",
     "caseImages": [
@@ -86350,7 +86350,7 @@
     "section": "GU (31-34)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Retroperitoneal paraganglioma",
     "caseImages": [
@@ -86392,7 +86392,7 @@
     "section": "GU (31-34)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "|-",
     "caseImages": [
@@ -86867,7 +86867,7 @@
     "section": "GI (15-22)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Linitis plastica",
     "caseImages": [
@@ -86937,7 +86937,7 @@
     "section": "GI (15-22)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "TB 【GI】",
     "caseImages": [
@@ -87008,7 +87008,7 @@
     "section": "MS (23-30)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Blount disease",
     "caseImages": [
@@ -87071,9 +87071,10 @@
     "isExchange": false,
     "diagnosis": "Emphysematous cystitis",
     "caseImages": [
-      "ST2023053101.jpg"
+      "ST2023053101.jpg",
+      "ST2023053102.jpg"
     ],
-    "answerImage": "ST2023053102.jpg"
+    "answerImage": "ST2023053201.jpg"
   },
   {
     "id": "ST20230532",
@@ -87085,9 +87086,8 @@
     "isExchange": false,
     "diagnosis": "Renal infarction",
     "caseImages": [
-      "ST2023053201.jpg",
-      "ST2023053203.jpg",
-      "ST2023053202.jpg"
+      "ST2023053202.jpg",
+      "ST2023053203.jpg"
     ],
     "answerImage": "ST2023053204.jpg"
   },
@@ -87579,7 +87579,7 @@
     "section": "GI (15-22)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hepatic angiosarcoma",
     "caseImages": [
@@ -87639,7 +87639,7 @@
     "section": "GI (15-22)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tuberculous peritonitis",
     "caseImages": [
@@ -87755,7 +87755,7 @@
     "section": "MS (23-30)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Juxta-cortical chondroma (Periosteal chondroma)",
     "caseImages": [
@@ -87811,7 +87811,7 @@
     "section": "GU (31-34)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ectopic right kidney with malrotation",
     "caseImages": [
@@ -88481,7 +88481,7 @@
     "section": "MS (23-30)",
     "year": "202311",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ewing sarcoma",
     "caseImages": [
@@ -88719,7 +88719,7 @@
     "section": "PE (43-46)",
     "year": "202311",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "https://radiopaedia.org/articles/bochdalek-hernia",
     "caseImages": [
@@ -89036,7 +89036,7 @@
     "section": "GI (15-22)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ménétrier disease",
     "caseImages": [
@@ -89136,7 +89136,7 @@
     "section": "MS (23-30)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Chondrosarcoma",
     "caseImages": [
@@ -89165,7 +89165,7 @@
     "section": "MS (23-30)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Growth plate fracture, SH classification type I",
     "caseImages": [
@@ -89240,7 +89240,7 @@
     "section": "GU (31-34)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Uterine leiomyosarcoma",
     "caseImages": [
@@ -89312,7 +89312,7 @@
     "section": "CV (35-38)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Left ventricular pseudoaneurysm",
     "caseImages": [
@@ -89368,7 +89368,7 @@
     "section": "US (39-42)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Choledochal cyst (Choledochocele, Caroli’s disease)",
     "caseImages": [
@@ -89729,7 +89729,7 @@
     "section": "GI (15-22)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intrahepatic cholangiocarcinoma",
     "caseImages": [
@@ -89845,15 +89845,15 @@
     "section": "MS (23-30)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteitis fibrosa cystica (Brown tumor)",
     "caseImages": [
       "ST2024052401.jpg",
-      "ST2024052403.jpg",
-      "ST2024052404.jpg"
+      "ST2024052402.jpg",
+      "ST2024052403.jpg"
     ],
-    "answerImage": "ST2024052402.jpg"
+    "answerImage": "ST2024052404.jpg"
   },
   {
     "id": "ST20240525",
@@ -89876,7 +89876,7 @@
     "section": "MS (23-30)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteoarthritis",
     "caseImages": [
@@ -89933,7 +89933,7 @@
     "section": "MS (23-30)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Renal osteodystrophy (Hyperparathyroidism)",
     "caseImages": [
@@ -89947,7 +89947,7 @@
     "section": "GU (31-34)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lymphoma【GU】",
     "caseImages": [
@@ -89976,7 +89976,7 @@
     "section": "GU (31-34)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Retroaortic left renal vein/posterior nutcracker syndrome",
     "caseImages": [
@@ -90091,7 +90091,7 @@
     "section": "US (39-42)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Testicular lymphoma",
     "caseImages": [
@@ -90595,7 +90595,7 @@
     "section": "MS (23-30)",
     "year": "202408",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hemophilic arthropathy",
     "caseImages": [
@@ -90651,7 +90651,7 @@
     "section": "MS (23-30)",
     "year": "202408",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ewing sarcoma",
     "caseImages": [
@@ -90685,9 +90685,9 @@
     "diagnosis": "Renal sinus lipomatosis",
     "caseImages": [
       "ST2024083201.jpg",
-      "ST2024083203.jpg"
+      "ST2024083202.jpg"
     ],
-    "answerImage": "ST2024083202.jpg"
+    "answerImage": "ST2024083203.jpg"
   },
   {
     "id": "ST20240833",
@@ -90695,7 +90695,7 @@
     "section": "GU (31-34)",
     "year": "202408",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Neurogenic tumor 【GI】",
     "caseImages": [
@@ -90781,7 +90781,7 @@
     "section": "US (39-42)",
     "year": "202408",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Adrenal myelolipoma",
     "caseImages": [
@@ -91387,7 +91387,7 @@
     "section": "GU (31-34)",
     "year": "202411",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Myoma post operation with abdominal wall and intrabdominal seedings",
     "caseImages": [
@@ -91897,7 +91897,7 @@
     "section": "GI (15-22)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Inflammatory hepatocellular adenoma",
     "caseImages": [
@@ -91968,7 +91968,7 @@
     "section": "GI (15-22)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Agenesis of dorsal pancreas (pancreatic hypoplasia)",
     "caseImages": [
@@ -91996,7 +91996,7 @@
     "section": "MS (23-30)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteopenia",
     "caseImages": [
@@ -92010,7 +92010,7 @@
     "section": "MS (23-30)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Parosteal osteosarcoma",
     "caseImages": [
@@ -92025,7 +92025,7 @@
     "section": "MS (23-30)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Heterotopic ossification",
     "caseImages": [
@@ -92083,7 +92083,7 @@
     "section": "MS (23-30)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Melorheostosis",
     "caseImages": [
@@ -92665,7 +92665,7 @@
     "section": "GI (15-22)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pneumatosis cystoides intestinalis",
     "caseImages": [
@@ -92791,7 +92791,7 @@
     "section": "MS (23-30)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tenosynovitis",
     "caseImages": [
@@ -92806,7 +92806,7 @@
     "section": "MS (23-30)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Synovial osteochondromatosis",
     "caseImages": [
@@ -93445,7 +93445,7 @@
     "section": "MS (23-30)",
     "year": "202508",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Erosive osteoarthritis",
     "caseImages": [
@@ -93574,7 +93574,7 @@
     "hospital": "中山",
     "disputed": false,
     "isExchange": false,
-    "diagnosis": "Uterine leiomyoma",
+    "diagnosis": "Lipoleiomyoma",
     "caseImages": [
       "ST2025083401.jpg"
     ],
@@ -93656,7 +93656,7 @@
     "section": "US (39-42)",
     "year": "202508",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Nutcracker syndrome",
     "caseImages": [
@@ -94027,7 +94027,7 @@
     "section": "GI (15-22)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "",
     "caseImages": [
@@ -94042,7 +94042,7 @@
     "section": "GI (15-22)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gastrointestinal stromal tumor (GIST)",
     "caseImages": [
@@ -94113,7 +94113,7 @@
     "section": "GI (15-22)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pseudoaneurysm 【GI】",
     "caseImages": [
@@ -94271,7 +94271,7 @@
     "hospital": "亞東",
     "disputed": false,
     "isExchange": false,
-    "diagnosis": "Glomerulovystic kidney disease",
+    "diagnosis": "Glomerulocystic kidney disease",
     "caseImages": [
       "ST2025113301.jpg"
     ],
@@ -94311,7 +94311,7 @@
     "section": "CV (35-38)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mitral annular disjunction",
     "caseImages": [
@@ -94767,7 +94767,7 @@
     "section": "GI (15-22)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "",
     "caseImages": [
@@ -94855,7 +94855,7 @@
     "section": "MS (23-30)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "SLE arthritis",
     "caseImages": [
@@ -95125,7 +95125,7 @@
     "section": "PE (43-46)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ankylosing spondylitis (AS)",
     "caseImages": [
