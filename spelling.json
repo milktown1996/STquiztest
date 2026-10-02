@@ -1,0 +1,1681 @@
+[
+  {
+    "name": "Abernethy malformation",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Acute hemorrhagic leukoencephalitis (AHLE)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Acute hyperammonic emcephalopathy (AHE)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Allergic Bronchopulmonary Aspergillosis (ABPA)",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Alveolar soft part sarcoma (ASPS)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Ameloblastoma",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Amyotrophic lateral sclerosis (ALS)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Anterior labroligamentous periosteal sleeve avulsion lesion (ALPSA)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Antipersperant artifact",
+    "subjects": [
+      "BR"
+    ],
+    "sections": [
+      "BR (47-50)"
+    ]
+  },
+  {
+    "name": "Aortoiliac occlusive disease (Leriche syndrome)",
+    "subjects": [
+      "CV",
+      "GI"
+    ],
+    "sections": [
+      "CV (35-38)",
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Balo concentric sclerosis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Basal cell nevus syndrome (Gorlin syndrome)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Bicipitoradial bursitis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Bipartite patella",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Bizarre parosteal osteochondromatous proliferation (BPOP)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Bochdalek hernia",
+    "subjects": [
+      "GI",
+      "PE"
+    ],
+    "sections": [
+      "GI (15-22)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Boerhaave Syndrome",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Bouveret Syndrome",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Cavernous transformation",
+    "subjects": [
+      "US"
+    ],
+    "sections": [
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Cemento-osseous dysplasia",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Chiari malformation, type 1",
+    "subjects": [
+      "NR",
+      "PE"
+    ],
+    "sections": [
+      "NR (01-10)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Chronic recurrent multifocal osteomyelitis (CRMO)",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Cleidocranial dysostosis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "CLIPPERS disease",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Cloacal Malformation",
+    "subjects": [
+      "PE"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Closed spinal dysraphism with lipomyelocele",
+    "subjects": [
+      "PE"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Coalescent mastoiditis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Congenital talipes equinovarus (CTEV) (Clubfoot)",
+    "subjects": [
+      "MS",
+      "PE"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Crossed Cerebellar Diaschisis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Currarino syndrome (Currarino triad)",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Cystitis cystica",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Dacryocystocele",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Dandy Walker malformation",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Decidualized endometrioma",
+    "subjects": [
+      "US"
+    ],
+    "sections": [
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Developmental dysplasia (DDH)",
+    "subjects": [
+      "MS",
+      "PE"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Diastematomyelia (Split cord malformation)",
+    "subjects": [
+      "MS",
+      "NR"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Diffuse idiopathic skeletal hyperostosis (DISH)",
+    "subjects": [
+      "MS",
+      "NR"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Disseminated cysticercosis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Dolichoectasia",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Dupuytren's contracture",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Dyke-Davidoff-Masson syndrome (DDMS)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Dysplastic cerebellar gangliocytoma (Lhermitte-Duclos disease)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Elastofibroma dorsi",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Epiglottitis",
+    "subjects": [
+      "NR",
+      "CH"
+    ],
+    "sections": [
+      "NR (01-10)",
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Extramedullary hematopoiesis",
+    "subjects": [
+      "CH",
+      "GU"
+    ],
+    "sections": [
+      "CH (11-14)",
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Fahr disease (bilateral striatopallidodentate calcinosis)",
+    "subjects": [
+      "NR",
+      "PE"
+    ],
+    "sections": [
+      "NR (01-10)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Fatty filum terminale",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Femoroacetabular impingement (FAI)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Fibrolamellar HCC",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Fibrolipomatous hamartoma (FLH)",
+    "subjects": [
+      "MS",
+      "US"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Freiberg's disease",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Galeazzi fracture-dislocation",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Garre's sclerosing osteomyelitis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Gastroschisis",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Gestational trophoblastic disease (GTD)",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Glenolabral articular disruption (GLAD) lesion",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Glomerulocystic kidney disease",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Gossypiboma",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Gradenigo syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Gynecomastia",
+    "subjects": [
+      "BR"
+    ],
+    "sections": [
+      "BR (47-50)"
+    ]
+  },
+  {
+    "name": "Haglund syndrome",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Hamstring Enthesopathy",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Hemangioendothelioma of liver",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Hemangiopericytoma",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Hemochomatosis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Hemophilic arthropathy",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Hepatisation of gallbladder",
+    "subjects": [
+      "US"
+    ],
+    "sections": [
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Hereditary haemorrhagic telangiectasia (HHT)",
+    "subjects": [
+      "GI",
+      "CH"
+    ],
+    "sections": [
+      "GI (15-22)",
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Hereditary multiple exostoses (HME)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Heterotopic ossification (Myositis ossificans)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Hirayama disease",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Hirschsprung disease",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Hutch diverticulum with left VUR",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Incudo-malleolar joint dislocation",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Infantile cortical hyperostosis (Caffey disease)",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Ivory epiphysis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Joubert syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Jugulotympanic paraganglioma",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Kienböck disease",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Kikuchi-Fujimoto disease",
+    "subjects": [
+      "NR",
+      "US"
+    ],
+    "sections": [
+      "NR (01-10)",
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Killian-Jamieson diverticulum",
+    "subjects": [
+      "CH",
+      "GI"
+    ],
+    "sections": [
+      "CH (11-14)",
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Kimura Disease",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Klippel-Trénaunay-Weber (KTW) syndrome",
+    "subjects": [
+      "CV",
+      "PE"
+    ],
+    "sections": [
+      "CV (35-38)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Krukenberg tumor",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Labyrinthitis Ossificans",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Lateral medullary syndrome (Wallenberg syndrome)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Legg-Calvé-Perthes disease",
+    "subjects": [
+      "MS",
+      "PE"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Lemierre syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Leri-Weill syndrome (dyschondrosteosis)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Limbus vertebra",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Linitis plastica",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Lipoleiomyoma",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Lipoma arborescens",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Lipomyelomeningocele",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Lissencephaly",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Localized anterior arthrofibrosis (Cyclops lesion)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Location",
+    "subjects": [
+      "BR"
+    ],
+    "sections": [
+      "BR (47-50)"
+    ]
+  },
+  {
+    "name": "Lumbosacral transitional vertebra",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Lymphangioleiomyomatosis (LAM)",
+    "subjects": [
+      "CH",
+      "GI"
+    ],
+    "sections": [
+      "CH (11-14)",
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Lymphocytic infundibuloneurohypophysitis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Macrodystrophia lipomatosa",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Maffucci syndrome",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Mallory-Weiss Syndrome",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Marchiafava-Bignami Disease",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "May-Thurner Syndrome",
+    "subjects": [
+      "CV",
+      "GI"
+    ],
+    "sections": [
+      "CV (35-38)",
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "McCune-Albright syndrome",
+    "subjects": [
+      "PE"
+    ],
+    "sections": []
+  },
+  {
+    "name": "McKusick Kaufman syndrome",
+    "subjects": [
+      "PE"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Medial plica",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Median arcuate ligament syndrome",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Melorheostosis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Meniscomeniscal ligament",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Metachromatic leukodystrophy",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Metal-induced synovitis (Metallosis)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Methotrexate-induced leukoencephalopathy",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Mikulicz syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Mild encephalopathy with reversible splenial lesion (MERS)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Mixed epithelial and stromal tumor of kidney",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Monteggia fracture",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Morel-Lavallée lesion",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Mucopolysaccharidosis (MPS)",
+    "subjects": [
+      "MS",
+      "PE"
+    ],
+    "sections": [
+      "MS (23-30)",
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Mueller-Weiss disease (Navicular osteonecrosis)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Multifocal micronodular pneumocyte hyperplasia (MMPH)",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Multinodular and vacuolating neuronal tumor (MVNT)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "MURCS association ( or Mayer-Rokitansky-Kuster-Hauser syndrome type 2)",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Myelodysplastic syndrome",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Myxopapillary ependymoma (MPE)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Ménétrier disease",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Nabothian cyst",
+    "subjects": [
+      "US"
+    ],
+    "sections": [
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Neuromyelitis optica (NMO)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Nutcracker syndrome",
+    "subjects": [
+      "GI",
+      "GU",
+      "US"
+    ],
+    "sections": [
+      "GI (15-22)",
+      "GU (31-34)",
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Obstructed hemivagina with ipsilateral renal anomaly(OHVIRA)",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Oligodendroglioma",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Omovertebral bone with Sprengel deformity of scapula",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Omphalocele",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Omphalomesenteric duct (vitelline duct) fistula",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Osgood-Schlatter disease",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Osteitis condensans ilii (OCI)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Osteitis fibrosa cystica (Brown tumor)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Osteochondritis dissecans (OCD) of elbow",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Osteopetrosis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Osteopoikilosis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Otosclerosis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Ovarian abscess with actinomycosis",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Pachydermoperiostosis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Paget-Schroetter syndrome",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Paragonimiasis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Pectus excavatum",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Pellegrini-Stieda lesion",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Pellegrini-Stieda syndrome",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Peutz-Jegher syndrome",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Peyronie’s disease",
+    "subjects": [
+      "US"
+    ],
+    "sections": [
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Pilocytic astrocytoma",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Pilon fractures",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Pineal Parenchymal Tumor of Intermediate Differentiation (PPTID)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Pleomorphic xanthoastrocytoma (PXA)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Pneumatosis cystoides intestinalis",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Pneumocystis jirovecii pneumonia (PJP)",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Porcelain gallbladder",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Progressive multifocal leukoencephalopathy (PML)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Proximal Iliotibial Band Syndrome",
+    "subjects": [
+      "MS"
+    ],
+    "sections": []
+  },
+  {
+    "name": "Pseudomyxoma peritonei",
+    "subjects": [
+      "GI",
+      "US"
+    ],
+    "sections": [
+      "GI (15-22)",
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Psoriatic arthritis (PsA)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Pylephlebitis",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Ramsay Hunt syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Relapsing polychondritis",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Renal osteodystrophy (Hyperparathyroidism)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Serpentine aneurysm",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Sesamoiditis",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Sinding-Larsen-Johansson disease",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Slipped capital femoral epiphysis (SCFE)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Spigelian hernia",
+    "subjects": [
+      "GI"
+    ],
+    "sections": [
+      "GI (15-22)"
+    ]
+  },
+  {
+    "name": "Spinocerebellar ataxia",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Sturge Weber syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Supraspinatus tear with geyser sign pseudotumor",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Synechiae",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "Talocalcaneal coalition",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Tenosynovial giant cell tumor or Pigmented villonodular synovitis (PVNS)",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Thanatophoric dysplasia",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ]
+  },
+  {
+    "name": "Torticollis",
+    "subjects": [
+      "PE",
+      "US"
+    ],
+    "sections": [
+      "PE (43-46)",
+      "US (39-42)"
+    ]
+  },
+  {
+    "name": "Tracheobronchopathia osteochondroplastica (TBO)",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [
+      "CH (11-14)"
+    ]
+  },
+  {
+    "name": "Trans-scaphoid perilunate fracture dislocation",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Triquetral fracture",
+    "subjects": [
+      "MS"
+    ],
+    "sections": [
+      "MS (23-30)"
+    ]
+  },
+  {
+    "name": "Tumefactive demyelinating lesion",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  },
+  {
+    "name": "Ureteritis cystica",
+    "subjects": [
+      "GU"
+    ],
+    "sections": [
+      "GU (31-34)"
+    ]
+  },
+  {
+    "name": "X-linked adrenoleukodystrophy",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ]
+  }
+]

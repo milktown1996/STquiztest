@@ -205,6 +205,24 @@
     display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px;
     background: var(--panel2); border: 1px solid var(--border); color: var(--muted);
   }
+  /* 拼音複習 */
+  .spell-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 16px; }
+  .spell-list { display: flex; flex-direction: column; gap: 2px; }
+  .spell-row {
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 7px 12px; border-radius: 8px;
+  }
+  .spell-row:nth-child(odd) { background: var(--panel2); }
+  .spell-name { font-size: 15px; letter-spacing: 0.2px; }
+  .spell-idx { color: var(--muted); font-size: 12px; min-width: 32px; text-align: right; }
+  .spell-sub { color: var(--muted); font-size: 11px; }
+  body.spell-blurred .spell-name {
+    filter: blur(5px);
+    cursor: pointer;
+    transition: filter 0.15s ease;
+  }
+  body.spell-blurred .spell-row:hover .spell-name,
+  body.spell-blurred .spell-name.shown { filter: none; }
   .hidden { display: none !important; }
 </style>
 </head>
@@ -277,8 +295,23 @@
         <span>🙈 已隱藏: <b id="homeHidden">0</b></span>
       </div>
 
+      <button class="start-btn" id="spellBtn">🔤 難拼字疾病名稱複習</button>
       <button class="primary start-btn" id="startBtn">▶ 開始刷題（隨機順序）</button>
       <button class="start-btn" id="startYearDescBtn">▶ 開始刷題（年份新到舊）</button>
+    </div>
+  </div>
+
+  <!-- 拼音複習畫面 -->
+  <div id="spellView" class="hidden">
+    <div class="card">
+      <div class="spell-toolbar">
+        <strong>🔤 難拼字疾病名稱</strong>
+        <select id="spellSubject"><option value="">全部科目</option></select>
+        <input type="text" id="spellSearch" placeholder="搜尋名稱...">
+        <button id="spellBlurToggle">👁 遮蔽模式（滑過才顯示）</button>
+        <span class="spell-sub" id="spellCount"></span>
+      </div>
+      <div class="spell-list" id="spellList"></div>
     </div>
   </div>
 
@@ -466,6 +499,7 @@ function updateStatBar() {
 function showHome() {
   document.getElementById("homeView").classList.remove("hidden");
   document.getElementById("quizView").classList.add("hidden");
+  document.getElementById("spellView").classList.add("hidden");
   document.getElementById("homeBtn").classList.add("hidden");
   document.body.classList.remove("quiz-mode");
   updateHomeSummary();
@@ -492,6 +526,7 @@ function startQuiz(order) {
   idx = 0;
   revealedIds = new Set(); // 新一輪開始，答案一律重新遮蔽
   document.getElementById("homeView").classList.add("hidden");
+  document.getElementById("spellView").classList.add("hidden");
   document.getElementById("quizView").classList.remove("hidden");
   document.getElementById("homeBtn").classList.remove("hidden");
   document.body.classList.add("quiz-mode");
@@ -698,6 +733,69 @@ document.getElementById("resetStatBtn").onclick = () => {
     updateHomeSummary();
     updateStatBar();
   }
+};
+
+/* ---------- 拼音複習 ---------- */
+
+let spellItems = [];
+
+function renderSpellList() {
+  const subj = document.getElementById("spellSubject").value;
+  const kw = document.getElementById("spellSearch").value.trim().toLowerCase();
+  const list = spellItems.filter(it => {
+    if (subj && !it.subjects.includes(subj)) return false;
+    if (kw && !it.name.toLowerCase().includes(kw)) return false;
+    return true;
+  });
+  document.getElementById("spellCount").textContent = `共 ${list.length} 個`;
+  document.getElementById("spellList").innerHTML = list.map((it, i) => `
+    <div class="spell-row">
+      <span class="spell-idx">${i + 1}.</span>
+      <span class="spell-name">${escapeHtml(it.name)}</span>
+      <span class="spell-sub">${escapeHtml(it.subjects.join(" / "))}</span>
+    </div>`).join("");
+  // 遮蔽模式下，點擊可固定顯示該筆
+  document.querySelectorAll("#spellList .spell-name").forEach(el => {
+    el.onclick = () => el.classList.toggle("shown");
+  });
+}
+
+function showSpell() {
+  document.getElementById("homeView").classList.add("hidden");
+  document.getElementById("quizView").classList.add("hidden");
+  document.getElementById("spellView").classList.remove("hidden");
+  document.getElementById("homeBtn").classList.remove("hidden");
+  document.body.classList.remove("quiz-mode");
+
+  if (spellItems.length === 0) {
+    fetch("spelling.json")
+      .then(r => r.json())
+      .then(data => {
+        spellItems = data;
+        const sel = document.getElementById("spellSubject");
+        [...new Set(data.flatMap(i => i.subjects))].sort().forEach(sub => {
+          const o = document.createElement("option");
+          o.value = sub; o.textContent = sub;
+          sel.appendChild(o);
+        });
+        renderSpellList();
+      })
+      .catch(err => {
+        document.getElementById("spellList").innerHTML =
+          `<div class="empty">載入拼音清單失敗：${err}</div>`;
+      });
+  } else {
+    renderSpellList();
+  }
+}
+
+document.getElementById("spellBtn").onclick = showSpell;
+document.getElementById("spellSubject").onchange = renderSpellList;
+document.getElementById("spellSearch").oninput = renderSpellList;
+document.getElementById("spellBlurToggle").onclick = (e) => {
+  const on = document.body.classList.toggle("spell-blurred");
+  e.target.textContent = on ? "👁 遮蔽中（點擊關閉）" : "👁 遮蔽模式（滑過才顯示）";
+  e.target.classList.toggle("primary", on);
 };
 
 // 鍵盤快捷鍵（僅在刷題畫面啟用）：
