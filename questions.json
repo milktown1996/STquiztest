@@ -67559,7 +67559,7 @@
     "section": "NR (01-10)",
     "year": "201608",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Metachromatic leukodystrophy",
     "caseImages": [
@@ -68235,7 +68235,7 @@
     "section": "NR (01-10)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Oligodendroglioma",
     "caseImages": [
@@ -68481,7 +68481,7 @@
     "section": "MS (23-30)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Quadrilateral Space Syndrome from Paralabral Cyst/ganglion",
     "caseImages": [
@@ -68971,7 +68971,7 @@
     "section": "NR (01-10)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Progressive multifocal leukoencephalopathy (PML)",
     "caseImages": [
@@ -69000,7 +69000,7 @@
     "section": "NR (01-10)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Metronidazole-induced encephalopathy",
     "caseImages": [
@@ -69196,7 +69196,7 @@
     "section": "MS (23-30)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Superior labral anterior posterior tear (SLAP Tear)",
     "caseImages": [
@@ -69294,7 +69294,7 @@
     "section": "MS (23-30)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Bucket-handle tear",
     "caseImages": [
@@ -69606,7 +69606,7 @@
     "section": "NR (01-10)",
     "year": "201705",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Enteroviral encephalitis",
     "caseImages": [
@@ -71067,7 +71067,7 @@
     "section": "NR (01-10)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lymphocytic infundibuloneurohypophysitis",
     "caseImages": [
@@ -71348,7 +71348,7 @@
     "section": "MS (23-30)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Quadriceps tendon rupture",
     "caseImages": [
@@ -71390,7 +71390,7 @@
     "section": "MS (23-30)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "DM foot",
     "caseImages": [
@@ -71404,7 +71404,7 @@
     "section": "MS (23-30)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Posterior ankle impingement (PAI) syndrome (os trigonum syndrome)",
     "caseImages": [
@@ -73164,7 +73164,7 @@
     "section": "NR (01-10)",
     "year": "201808",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Marchiafava-Bignami Disease",
     "caseImages": [
@@ -73976,7 +73976,7 @@
     "section": "NR (01-10)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Dandy Walker malformation",
     "caseImages": [
@@ -75296,7 +75296,7 @@
     "section": "NR (01-10)",
     "year": "201905",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "HIV encephalopathy",
     "caseImages": [
@@ -76783,7 +76783,7 @@
     "section": "NR (01-10)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Diffuse astrocytoma",
     "caseImages": [
@@ -77001,7 +77001,7 @@
     "section": "MS (23-30)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Anterior calcaneal process fracture",
     "caseImages": [
@@ -77015,7 +77015,7 @@
     "section": "MS (23-30)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Trans-radial trans-scaphoid lunate dislocation",
     "caseImages": [
@@ -77057,7 +77057,7 @@
     "section": "MS (23-30)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Avascular necrosis (AVN)",
     "caseImages": [
@@ -77085,7 +77085,7 @@
     "section": "MS (23-30)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lisfranc injury",
     "caseImages": [
@@ -78225,7 +78225,7 @@
     "section": "NR (01-10)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "",
     "caseImages": [
@@ -78969,7 +78969,7 @@
     "section": "NR (01-10)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intracranial hypertension",
     "caseImages": [
@@ -79171,7 +79171,7 @@
     "section": "MS (23-30)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Medial plica",
     "caseImages": [
@@ -79185,7 +79185,7 @@
     "section": "MS (23-30)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Baxter’s neuropathy",
     "caseImages": [
@@ -79626,7 +79626,7 @@
     "section": "NR (01-10)",
     "year": "202011",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Neuromyelitis optica (NMO)",
     "caseImages": [
@@ -80334,7 +80334,7 @@
     "section": "NR (01-10)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Metronidazole-induced encephalopathy",
     "caseImages": [
@@ -80657,7 +80657,7 @@
     "section": "MS (23-30)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tillaux fracture",
     "caseImages": [
@@ -80996,7 +80996,7 @@
     "section": "NR (01-10)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tuberculosis (TB) meningitis",
     "caseImages": [
@@ -81348,7 +81348,7 @@
     "section": "MS (23-30)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Anterior labroligamentous periosteal sleeve avulsion lesion (ALPSA)",
     "caseImages": [
@@ -82085,7 +82085,7 @@
     "section": "MS (23-30)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Anterior talofibular ligament tear",
     "caseImages": [
@@ -82729,7 +82729,7 @@
     "section": "MS (23-30)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Trochlear dysplasia",
     "caseImages": [
@@ -82801,7 +82801,7 @@
     "section": "MS (23-30)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Anterosuperior labral tear of hip",
     "caseImages": [
@@ -83451,7 +83451,7 @@
     "section": "MS (23-30)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Osteochondritis dissecans",
     "caseImages": [
@@ -83849,7 +83849,7 @@
     "section": "NR (01-10)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intradural chordoma",
     "caseImages": [
@@ -83877,7 +83877,7 @@
     "section": "NR (01-10)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Paragonimiasis",
     "caseImages": [
@@ -84622,7 +84622,7 @@
     "section": "NR (01-10)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Acute hemorrhagic leukoencephalitis (AHLE)",
     "caseImages": [
@@ -84923,7 +84923,7 @@
     "section": "MS (23-30)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lisfranc injury",
     "caseImages": [
@@ -85305,7 +85305,7 @@
     "section": "NR (01-10)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tumefactive demyelinating lesion",
     "caseImages": [
@@ -85319,7 +85319,7 @@
     "section": "NR (01-10)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "# Anatomy 【NR】",
     "caseImages": [
@@ -85631,7 +85631,7 @@
     "section": "MS (23-30)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Supraspinatus tear with geyser sign pseudotumor",
     "caseImages": [
@@ -86249,7 +86249,7 @@
     "section": "MS (23-30)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Galeazzi fracture-dislocation",
     "caseImages": [
@@ -86677,7 +86677,7 @@
     "section": "NR (01-10)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "MELAS syndrome",
     "caseImages": [
@@ -86707,7 +86707,7 @@
     "section": "NR (01-10)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Basal cell nevus syndrome (Gorlin syndrome)",
     "caseImages": [
@@ -86966,7 +86966,7 @@
     "section": "MS (23-30)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Bennett’s fracture",
     "caseImages": [
@@ -87052,7 +87052,7 @@
     "section": "MS (23-30)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Physeal bar formation",
     "caseImages": [
@@ -88101,7 +88101,7 @@
     "section": "NR (01-10)",
     "year": "202311",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intracranial hypotension",
     "caseImages": [
@@ -88171,7 +88171,7 @@
     "section": "NR (01-10)",
     "year": "202311",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Transitional venous anomaly",
     "caseImages": [
@@ -88906,7 +88906,7 @@
     "section": "NR (01-10)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cryptococcal infection",
     "caseImages": [
@@ -89108,7 +89108,7 @@
     "section": "MS (23-30)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lunate dislocation",
     "caseImages": [
@@ -89211,7 +89211,7 @@
     "section": "MS (23-30)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Trochanteric bursitis",
     "caseImages": [
@@ -89526,7 +89526,7 @@
     "section": "NR (01-10)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Dysgenesis of corpus callosum with pericallosal lipoma",
     "caseImages": [
@@ -89540,7 +89540,7 @@
     "section": "NR (01-10)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tuberous sclerosis",
     "caseImages": [
@@ -89831,7 +89831,7 @@
     "section": "MS (23-30)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "ACL complete tear",
     "caseImages": [
@@ -90623,7 +90623,7 @@
     "section": "MS (23-30)",
     "year": "202408",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Glenolabral articular disruption (GLAD) lesion",
     "caseImages": [
@@ -91329,7 +91329,7 @@
     "section": "MS (23-30)",
     "year": "202411",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Chance fracture",
     "caseImages": [
@@ -92069,7 +92069,7 @@
     "section": "MS (23-30)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Perilunate dislocation",
     "caseImages": [
@@ -92465,7 +92465,7 @@
     "section": "NR (01-10)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Metronidazole-induced encephalopathy",
     "caseImages": [
@@ -92523,7 +92523,7 @@
     "section": "NR (01-10)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Dysplastic cerebellar gangliocytoma",
     "caseImages": [
@@ -93459,7 +93459,7 @@
     "section": "MS (23-30)",
     "year": "202508",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Superior labral anterior posterior tear (SLAP Tear)",
     "caseImages": [
@@ -93910,7 +93910,7 @@
     "section": "NR (01-10)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lateral medullary syndrome (Wallenberg syndrome)",
     "caseImages": [
@@ -94567,7 +94567,7 @@
     "section": "NR (01-10)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "CLIPPERS disease",
     "caseImages": [
@@ -94624,7 +94624,7 @@
     "section": "NR (01-10)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Metronidazole-induced encephalopathy",
     "caseImages": [
@@ -94638,7 +94638,7 @@
     "section": "NR (01-10)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Neuromyelitis optica (NMO)",
     "caseImages": [
@@ -94884,7 +94884,7 @@
     "section": "MS (23-30)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ischiofemoral impingement (IFI) syndrome",
     "caseImages": [
@@ -94912,7 +94912,7 @@
     "section": "MS (23-30)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Bucket-handle tear",
     "caseImages": [
@@ -94940,7 +94940,7 @@
     "section": "MS (23-30)",
     "year": "202602",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Perilunate dislocation",
     "caseImages": [
