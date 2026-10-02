@@ -6,6 +6,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20221117"
     ]
   },
   {
@@ -15,6 +18,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20220809"
     ]
   },
   {
@@ -24,6 +30,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20250507",
+      "ST20220805"
     ]
   },
   {
@@ -33,6 +43,9 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20190212"
     ]
   },
   {
@@ -42,6 +55,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20170228"
     ]
   },
   {
@@ -51,6 +67,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20200224"
     ]
   },
   {
@@ -60,6 +79,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20231106",
+      "ST20211106"
     ]
   },
   {
@@ -69,6 +92,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20210628"
     ]
   },
   {
@@ -78,6 +104,9 @@
     ],
     "sections": [
       "BR (47-50)"
+    ],
+    "questionIds": [
+      "ST20251149"
     ]
   },
   {
@@ -89,6 +118,14 @@
     "sections": [
       "CV (35-38)",
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20240518",
+      "ST20230515",
+      "ST20211138",
+      "ST20190535",
+      "ST20171137",
+      "ST20160217"
     ]
   },
   {
@@ -96,7 +133,8 @@
     "subjects": [
       "NR"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Basal cell nevus syndrome (Gorlin syndrome)",
@@ -105,6 +143,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20230506"
     ]
   },
   {
@@ -112,7 +153,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Bipartite patella",
@@ -121,6 +163,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20170229"
     ]
   },
   {
@@ -130,6 +175,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250525",
+      "ST20210230"
     ]
   },
   {
@@ -141,6 +190,10 @@
     "sections": [
       "GI (15-22)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20250819",
+      "ST20231146"
     ]
   },
   {
@@ -150,6 +203,9 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20210612"
     ]
   },
   {
@@ -159,6 +215,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20170218"
     ]
   },
   {
@@ -168,6 +227,10 @@
     ],
     "sections": [
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20210841",
+      "ST20180839"
     ]
   },
   {
@@ -177,6 +240,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20160208"
     ]
   },
   {
@@ -188,6 +254,10 @@
     "sections": [
       "NR (01-10)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20211143",
+      "ST20170503"
     ]
   },
   {
@@ -197,6 +267,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20220843"
     ]
   },
   {
@@ -206,6 +279,12 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20240228",
+      "ST20240224",
+      "ST20230205",
+      "ST20210243"
     ]
   },
   {
@@ -215,6 +294,11 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20260204",
+      "ST20220810",
+      "ST20210606"
     ]
   },
   {
@@ -222,14 +306,16 @@
     "subjects": [
       "PE"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Closed spinal dysraphism with lipomyelocele",
     "subjects": [
       "PE"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Coalescent mastoiditis",
@@ -238,6 +324,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20190203"
     ]
   },
   {
@@ -249,6 +338,10 @@
     "sections": [
       "MS (23-30)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20221144",
+      "ST20191126"
     ]
   },
   {
@@ -258,6 +351,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20250201"
     ]
   },
   {
@@ -267,6 +363,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20211146"
     ]
   },
   {
@@ -276,6 +375,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20220233"
     ]
   },
   {
@@ -285,6 +387,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20220205"
     ]
   },
   {
@@ -294,6 +399,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20181110"
     ]
   },
   {
@@ -303,6 +411,9 @@
     ],
     "sections": [
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20250842"
     ]
   },
   {
@@ -314,6 +425,10 @@
     "sections": [
       "MS (23-30)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20190827",
+      "ST20160843"
     ]
   },
   {
@@ -325,6 +440,10 @@
     "sections": [
       "MS (23-30)",
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20240528",
+      "ST20230208"
     ]
   },
   {
@@ -336,6 +455,10 @@
     "sections": [
       "MS (23-30)",
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20181104",
+      "ST20160525"
     ]
   },
   {
@@ -345,6 +468,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20190507"
     ]
   },
   {
@@ -354,6 +480,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20210609"
     ]
   },
   {
@@ -361,7 +490,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Dyke-Davidoff-Masson syndrome (DDMS)",
@@ -370,6 +500,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20210204"
     ]
   },
   {
@@ -379,6 +512,12 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20250510",
+      "ST20240507",
+      "ST20220501",
+      "ST20170806"
     ]
   },
   {
@@ -388,6 +527,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20230823"
     ]
   },
   {
@@ -399,6 +541,10 @@
     "sections": [
       "NR (01-10)",
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20250811",
+      "ST20250504"
     ]
   },
   {
@@ -410,6 +556,10 @@
     "sections": [
       "CH (11-14)",
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20230511",
+      "ST20170534"
     ]
   },
   {
@@ -421,6 +571,10 @@
     "sections": [
       "NR (01-10)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20241146",
+      "ST20200208"
     ]
   },
   {
@@ -430,6 +584,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20190802"
     ]
   },
   {
@@ -437,7 +594,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Fibrolamellar HCC",
@@ -446,6 +604,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20260222"
     ]
   },
   {
@@ -457,6 +618,10 @@
     "sections": [
       "MS (23-30)",
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20190242",
+      "ST20180827"
     ]
   },
   {
@@ -466,6 +631,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20251123",
+      "ST20190829"
     ]
   },
   {
@@ -475,6 +644,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20230224",
+      "ST20180528"
     ]
   },
   {
@@ -484,6 +657,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20180805"
     ]
   },
   {
@@ -493,6 +669,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20220846"
     ]
   },
   {
@@ -502,6 +681,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20170531"
     ]
   },
   {
@@ -511,6 +693,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20240828"
     ]
   },
   {
@@ -520,6 +705,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20251133"
     ]
   },
   {
@@ -529,6 +717,11 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20230218",
+      "ST20211119",
+      "ST20190221"
     ]
   },
   {
@@ -538,6 +731,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20240506"
     ]
   },
   {
@@ -547,6 +743,13 @@
     ],
     "sections": [
       "BR (47-50)"
+    ],
+    "questionIds": [
+      "ST20220849",
+      "ST20220249",
+      "ST20180547",
+      "ST20171149",
+      "ST20170249"
     ]
   },
   {
@@ -556,6 +759,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250824",
+      "ST20200526"
     ]
   },
   {
@@ -565,6 +772,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250828"
     ]
   },
   {
@@ -574,6 +784,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20170245"
     ]
   },
   {
@@ -583,6 +796,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20160201"
     ]
   },
   {
@@ -592,6 +808,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20200225"
     ]
   },
   {
@@ -601,6 +820,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20240826",
+      "ST20191128"
     ]
   },
   {
@@ -610,6 +833,10 @@
     ],
     "sections": [
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20250841",
+      "ST20171141"
     ]
   },
   {
@@ -621,6 +848,10 @@
     "sections": [
       "GI (15-22)",
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20250812",
+      "ST20220219"
     ]
   },
   {
@@ -630,6 +861,11 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250827",
+      "ST20250230",
+      "ST20160823"
     ]
   },
   {
@@ -639,6 +875,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250225",
+      "ST20211126"
     ]
   },
   {
@@ -648,6 +888,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20200503"
     ]
   },
   {
@@ -657,6 +900,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20181146"
     ]
   },
   {
@@ -666,6 +912,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20181144"
     ]
   },
   {
@@ -675,6 +924,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20200509"
     ]
   },
   {
@@ -684,6 +936,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20180845"
     ]
   },
   {
@@ -693,6 +948,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20251124"
     ]
   },
   {
@@ -702,6 +960,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20211103",
+      "ST20181108"
     ]
   },
   {
@@ -711,6 +973,12 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20221105",
+      "ST20200806",
+      "ST20200507",
+      "ST20161110"
     ]
   },
   {
@@ -720,6 +988,11 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20260227",
+      "ST20251130",
+      "ST20230523"
     ]
   },
   {
@@ -731,6 +1004,10 @@
     "sections": [
       "NR (01-10)",
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20250808",
+      "ST20250542"
     ]
   },
   {
@@ -742,6 +1019,12 @@
     "sections": [
       "CH (11-14)",
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20230521",
+      "ST20220514",
+      "ST20170814",
+      "ST20170216"
     ]
   },
   {
@@ -751,6 +1034,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20230505"
     ]
   },
   {
@@ -762,6 +1048,10 @@
     "sections": [
       "CV (35-38)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20241136",
+      "ST20220845"
     ]
   },
   {
@@ -771,6 +1061,12 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20240522",
+      "ST20230831",
+      "ST20201133",
+      "ST20190831"
     ]
   },
   {
@@ -780,6 +1076,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20190207"
     ]
   },
   {
@@ -789,6 +1088,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20251108"
     ]
   },
   {
@@ -800,6 +1102,11 @@
     "sections": [
       "MS (23-30)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20230225",
+      "ST20200243",
+      "ST20180529"
     ]
   },
   {
@@ -809,6 +1116,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20250207"
     ]
   },
   {
@@ -818,6 +1128,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20160824"
     ]
   },
   {
@@ -825,7 +1138,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Linitis plastica",
@@ -834,6 +1148,10 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20230517",
+      "ST20190220"
     ]
   },
   {
@@ -843,6 +1161,10 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20250834",
+      "ST20210831"
     ]
   },
   {
@@ -852,6 +1174,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20240829",
+      "ST20180525"
     ]
   },
   {
@@ -861,6 +1187,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20180807"
     ]
   },
   {
@@ -870,6 +1199,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20220804"
     ]
   },
   {
@@ -879,6 +1211,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20160829"
     ]
   },
   {
@@ -888,6 +1223,14 @@
     ],
     "sections": [
       "BR (47-50)"
+    ],
+    "questionIds": [
+      "ST20240549",
+      "ST20231149",
+      "ST20231148",
+      "ST20230850",
+      "ST20200548",
+      "ST20180548"
     ]
   },
   {
@@ -897,6 +1240,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20240226",
+      "ST20201130"
     ]
   },
   {
@@ -908,6 +1255,10 @@
     "sections": [
       "CH (11-14)",
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20230216",
+      "ST20230211"
     ]
   },
   {
@@ -917,6 +1268,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20171106"
     ]
   },
   {
@@ -926,6 +1280,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20161129"
     ]
   },
   {
@@ -935,6 +1292,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20220525",
+      "ST20170828"
     ]
   },
   {
@@ -944,6 +1305,9 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20210613"
     ]
   },
   {
@@ -953,6 +1317,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20180804"
     ]
   },
   {
@@ -964,6 +1331,10 @@
     "sections": [
       "CV (35-38)",
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20210221",
+      "ST20190836"
     ]
   },
   {
@@ -971,14 +1342,16 @@
     "subjects": [
       "PE"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "McKusick Kaufman syndrome",
     "subjects": [
       "PE"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Medial plica",
@@ -987,6 +1360,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20200824"
     ]
   },
   {
@@ -996,6 +1372,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20180517"
     ]
   },
   {
@@ -1005,6 +1384,11 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250229",
+      "ST20240527",
+      "ST20221123"
     ]
   },
   {
@@ -1014,6 +1398,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20200823"
     ]
   },
   {
@@ -1023,6 +1410,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20160808"
     ]
   },
   {
@@ -1032,6 +1422,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20160830"
     ]
   },
   {
@@ -1041,6 +1434,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20210806"
     ]
   },
   {
@@ -1050,6 +1446,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20170506"
     ]
   },
   {
@@ -1059,6 +1458,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20171101"
     ]
   },
   {
@@ -1068,6 +1470,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20220231"
     ]
   },
   {
@@ -1077,6 +1482,11 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20230529",
+      "ST20210624",
+      "ST20171127"
     ]
   },
   {
@@ -1086,6 +1496,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20210627",
+      "ST20210228"
     ]
   },
   {
@@ -1097,6 +1511,10 @@
     "sections": [
       "MS (23-30)",
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20220227",
+      "ST20160244"
     ]
   },
   {
@@ -1104,7 +1522,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Multifocal micronodular pneumocyte hyperplasia (MMPH)",
@@ -1113,6 +1532,9 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20180513"
     ]
   },
   {
@@ -1122,6 +1544,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20220207",
+      "ST20210804"
     ]
   },
   {
@@ -1131,6 +1557,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20180834"
     ]
   },
   {
@@ -1140,6 +1569,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20171124"
     ]
   },
   {
@@ -1149,6 +1581,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20200508"
     ]
   },
   {
@@ -1158,6 +1593,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20240218"
     ]
   },
   {
@@ -1167,6 +1605,9 @@
     ],
     "sections": [
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20190539"
     ]
   },
   {
@@ -1176,6 +1617,11 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20260209",
+      "ST20201106",
+      "ST20171104"
     ]
   },
   {
@@ -1189,6 +1635,15 @@
       "GI (15-22)",
       "GU (31-34)",
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20250840",
+      "ST20240819",
+      "ST20230834",
+      "ST20221121",
+      "ST20220840",
+      "ST20190531",
+      "ST20160239"
     ]
   },
   {
@@ -1198,6 +1653,11 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20230234",
+      "ST20190832",
+      "ST20170231"
     ]
   },
   {
@@ -1207,6 +1667,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20161106"
     ]
   },
   {
@@ -1214,7 +1677,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Omphalocele",
@@ -1223,6 +1687,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20240546"
     ]
   },
   {
@@ -1232,6 +1699,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20160543"
     ]
   },
   {
@@ -1241,6 +1711,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20260229",
+      "ST20201124"
     ]
   },
   {
@@ -1250,6 +1724,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20200829",
+      "ST20190525"
     ]
   },
   {
@@ -1259,6 +1737,12 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250523",
+      "ST20240524",
+      "ST20160826",
+      "ST20160526"
     ]
   },
   {
@@ -1268,6 +1752,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20220226"
     ]
   },
   {
@@ -1277,6 +1764,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20190530",
+      "ST20181124"
     ]
   },
   {
@@ -1286,6 +1777,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20220530",
+      "ST20170829"
     ]
   },
   {
@@ -1295,6 +1790,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20230803",
+      "ST20200801"
     ]
   },
   {
@@ -1304,6 +1803,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20180233"
     ]
   },
   {
@@ -1311,7 +1813,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Paget-Schroetter syndrome",
@@ -1320,6 +1823,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20201123"
     ]
   },
   {
@@ -1329,6 +1835,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20220506",
+      "ST20170801"
     ]
   },
   {
@@ -1338,6 +1848,10 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20190514",
+      "ST20160511"
     ]
   },
   {
@@ -1345,14 +1859,16 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Pellegrini-Stieda syndrome",
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Peutz-Jegher syndrome",
@@ -1361,6 +1877,10 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20250543",
+      "ST20210843"
     ]
   },
   {
@@ -1370,6 +1890,9 @@
     ],
     "sections": [
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20230840"
     ]
   },
   {
@@ -1379,6 +1902,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20221146"
     ]
   },
   {
@@ -1386,7 +1912,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Pineal Parenchymal Tumor of Intermediate Differentiation (PPTID)",
@@ -1395,6 +1922,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20170208"
     ]
   },
   {
@@ -1404,6 +1934,10 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20230510",
+      "ST20160802"
     ]
   },
   {
@@ -1413,6 +1947,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20250520"
     ]
   },
   {
@@ -1422,6 +1959,13 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20260214",
+      "ST20250211",
+      "ST20201114",
+      "ST20200213",
+      "ST20181112"
     ]
   },
   {
@@ -1431,6 +1975,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20190819"
     ]
   },
   {
@@ -1440,6 +1987,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20170207"
     ]
   },
   {
@@ -1447,7 +1997,8 @@
     "subjects": [
       "MS"
     ],
-    "sections": []
+    "sections": [],
+    "questionIds": []
   },
   {
     "name": "Pseudomyxoma peritonei",
@@ -1458,6 +2009,10 @@
     "sections": [
       "GI (15-22)",
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20191139",
+      "ST20171119"
     ]
   },
   {
@@ -1467,6 +2022,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20241123",
+      "ST20180829"
     ]
   },
   {
@@ -1476,6 +2035,9 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20230217"
     ]
   },
   {
@@ -1485,6 +2047,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20190805"
     ]
   },
   {
@@ -1494,6 +2059,9 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20180512"
     ]
   },
   {
@@ -1503,6 +2071,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20240530",
+      "ST20170523"
     ]
   },
   {
@@ -1512,6 +2084,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20170201"
     ]
   },
   {
@@ -1521,6 +2096,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250527"
     ]
   },
   {
@@ -1530,6 +2108,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20210630"
     ]
   },
   {
@@ -1539,6 +2120,13 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250226",
+      "ST20230230",
+      "ST20220524",
+      "ST20180227",
+      "ST20170824"
     ]
   },
   {
@@ -1548,6 +2136,11 @@
     ],
     "sections": [
       "GI (15-22)"
+    ],
+    "questionIds": [
+      "ST20240517",
+      "ST20200820",
+      "ST20190820"
     ]
   },
   {
@@ -1557,6 +2150,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20171109"
     ]
   },
   {
@@ -1566,6 +2162,12 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20230508",
+      "ST20200501",
+      "ST20180507",
+      "ST20160804"
     ]
   },
   {
@@ -1575,6 +2177,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20221130"
     ]
   },
   {
@@ -1584,6 +2189,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20160234"
     ]
   },
   {
@@ -1593,6 +2201,9 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20221126"
     ]
   },
   {
@@ -1602,6 +2213,17 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20230227",
+      "ST20220528",
+      "ST20220230",
+      "ST20210823",
+      "ST20190529",
+      "ST20170827",
+      "ST20170527",
+      "ST20160528",
+      "ST20160527"
     ]
   },
   {
@@ -1611,6 +2233,9 @@
     ],
     "sections": [
       "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20190245"
     ]
   },
   {
@@ -1622,6 +2247,13 @@
     "sections": [
       "PE (43-46)",
       "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20240543",
+      "ST20240240",
+      "ST20220242",
+      "ST20200540",
+      "ST20170541"
     ]
   },
   {
@@ -1631,6 +2263,9 @@
     ],
     "sections": [
       "CH (11-14)"
+    ],
+    "questionIds": [
+      "ST20180813"
     ]
   },
   {
@@ -1640,6 +2275,10 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20220527",
+      "ST20170826"
     ]
   },
   {
@@ -1649,6 +2288,12 @@
     ],
     "sections": [
       "MS (23-30)"
+    ],
+    "questionIds": [
+      "ST20250829",
+      "ST20230827",
+      "ST20220223",
+      "ST20201128"
     ]
   },
   {
@@ -1658,6 +2303,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20221107"
     ]
   },
   {
@@ -1667,6 +2315,9 @@
     ],
     "sections": [
       "GU (31-34)"
+    ],
+    "questionIds": [
+      "ST20160231"
     ]
   },
   {
@@ -1676,6 +2327,9 @@
     ],
     "sections": [
       "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20211105"
     ]
   }
 ]

@@ -223,6 +223,26 @@
   }
   body.spell-blurred .spell-row:hover .spell-name,
   body.spell-blurred .spell-name.shown { filter: none; }
+  .spell-img-btn {
+    padding: 2px 8px; font-size: 12px; border-radius: 6px;
+    background: var(--panel); border: 1px solid var(--border); color: var(--muted);
+  }
+  .spell-img-btn:hover { color: var(--text); border-color: var(--accent); }
+  .spell-img-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .spell-images {
+    display: flex; flex-wrap: nowrap; gap: 8px;
+    overflow-x: auto; overflow-y: hidden;
+    padding: 8px 0 10px 42px;
+  }
+  .spell-images img {
+    flex: 0 0 auto; height: min(42vh, 380px); width: auto;
+    object-fit: contain; background: #000;
+    border: 1px solid var(--border); border-radius: 6px;
+  }
+  @media (max-width: 700px) {
+    .spell-images { padding-left: 0; }
+    .spell-images img { height: auto; width: 86vw; }
+  }
   .hidden { display: none !important; }
 </style>
 </head>
@@ -748,15 +768,50 @@ function renderSpellList() {
     return true;
   });
   document.getElementById("spellCount").textContent = `共 ${list.length} 個`;
-  document.getElementById("spellList").innerHTML = list.map((it, i) => `
-    <div class="spell-row">
-      <span class="spell-idx">${i + 1}.</span>
-      <span class="spell-name">${escapeHtml(it.name)}</span>
-      <span class="spell-sub">${escapeHtml(it.subjects.join(" / "))}</span>
-    </div>`).join("");
-  // 遮蔽模式下，點擊可固定顯示該筆
+  document.getElementById("spellList").innerHTML = list.map((it, i) => {
+    const n = (it.questionIds || []).length;
+    const imgBtn = n
+      ? `<button class="spell-img-btn" data-idx="${i}">🖼 ${n} 題影像</button>`
+      : `<span class="spell-sub">（無對應影像）</span>`;
+    return `
+      <div>
+        <div class="spell-row">
+          <span class="spell-idx">${i + 1}.</span>
+          <span class="spell-name">${escapeHtml(it.name)}</span>
+          <span class="spell-sub">${escapeHtml(it.subjects.join(" / "))}</span>
+          ${imgBtn}
+        </div>
+        <div class="spell-images hidden" id="spellImgs${i}"></div>
+      </div>`;
+  }).join("");
+
+  // 遮蔽模式下，點擊名稱可固定顯示該筆
   document.querySelectorAll("#spellList .spell-name").forEach(el => {
     el.onclick = () => el.classList.toggle("shown");
+  });
+
+  // 點擊影像按鈕展開/收合該疾病所有 citation 的影像
+  document.querySelectorAll("#spellList .spell-img-btn").forEach(btn => {
+    btn.onclick = () => {
+      const i = btn.dataset.idx;
+      const box = document.getElementById("spellImgs" + i);
+      const open = box.classList.toggle("hidden");
+      btn.classList.toggle("active", !open);
+      if (!open && !box.dataset.loaded) {
+        const byId = Object.fromEntries(questions.map(q => [q.id, q]));
+        const imgs = [];
+        (list[i].questionIds || []).forEach(qid => {
+          const q = byId[qid];
+          if (!q) return;
+          q.caseImages.forEach(im => imgs.push(im));
+          imgs.push(q.answerImage);
+        });
+        box.innerHTML = imgs.length
+          ? imgs.map(im => `<img src="images/${encodeURIComponent(im)}" loading="lazy">`).join("")
+          : `<span class="spell-sub">找不到對應影像（題目可能不在題庫中）</span>`;
+        box.dataset.loaded = "1";
+      }
+    };
   });
 }
 

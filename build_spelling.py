@@ -48,16 +48,20 @@ for f in sorted(TOPIC_DIR.glob("ST_*.md")):
         continue
 
     name = f.stem[3:] if f.stem.startswith("ST_") else f.stem  # 去掉 ST_ 前綴
+    body = text[m.end():]
+    qids = re.findall(r"!\[\[(ST\d{8,10})\]\]", body)  # 該疾病引用的題號
     items.append({
         "name": name,
         "subjects": parse_field(fm, "科目"),
         "sections": parse_field(fm, "Section"),
+        "questionIds": list(dict.fromkeys(qids)),
     })
 
 items.sort(key=lambda x: x["name"].lower())
 OUT_JSON.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
 
-print(f"共輸出 {len(items)} 個難拼字疾病名稱")
+linked = sum(1 for i in items if i["questionIds"])
+print(f"共輸出 {len(items)} 個難拼字疾病名稱（其中 {linked} 個有對應題目影像）")
 c = Counter(s for i in items for s in (i["subjects"] or ["(未填科目)"]))
 for k, v in sorted(c.items()):
     print(f"  {k}: {v}")
