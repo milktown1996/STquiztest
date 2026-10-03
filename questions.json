@@ -66664,7 +66664,7 @@
     "section": "PE (43-46)",
     "year": "201602",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Swyer-James syndrome",
     "caseImages": [
@@ -67346,7 +67346,7 @@
     "section": "PE (43-46)",
     "year": "201605",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Omphalomesenteric duct (vitelline duct) fistula",
     "caseImages": [
@@ -68293,7 +68293,7 @@
     "section": "NR (01-10)",
     "year": "201611",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Jugulotympanic paraganglioma",
     "caseImages": [
@@ -68915,7 +68915,7 @@
     "section": "NR (01-10)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hangman fracture",
     "caseImages": [
@@ -69420,7 +69420,7 @@
     "section": "US (39-42)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Warthin tumor",
     "caseImages": [
@@ -69490,7 +69490,7 @@
     "section": "PE (43-46)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Trachea agenesis",
     "caseImages": [
@@ -69504,7 +69504,7 @@
     "section": "PE (43-46)",
     "year": "201702",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hemangioendothelioma of liver",
     "caseImages": [
@@ -69662,7 +69662,7 @@
     "section": "NR (01-10)",
     "year": "201705",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mikulicz syndrome",
     "caseImages": [
@@ -70379,7 +70379,7 @@
     "section": "NR (01-10)",
     "year": "201708",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Vestibular schwannoma",
     "caseImages": [
@@ -70997,7 +70997,7 @@
     "section": "NR (01-10)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Mild encephalopathy with reversible splenial lesion (MERS)",
     "caseImages": [
@@ -71053,7 +71053,7 @@
     "section": "NR (01-10)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Leigh disease",
     "caseImages": [
@@ -71109,7 +71109,7 @@
     "section": "NR (01-10)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Spinocerebellar ataxia",
     "caseImages": [
@@ -71123,7 +71123,7 @@
     "section": "NR (01-10)",
     "year": "201711",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Microtia",
     "caseImages": [
@@ -72820,7 +72820,7 @@
     "section": "MS (23-30)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Chondrosarcoma",
     "caseImages": [
@@ -73018,7 +73018,7 @@
     "section": "PE (43-46)",
     "year": "201805",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Undifferentiated embryonal sarcoma of liver (UESL)",
     "caseImages": [
@@ -73730,7 +73730,7 @@
     "section": "PE (43-46)",
     "year": "201808",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Caudal regression syndrome",
     "caseImages": [
@@ -73864,7 +73864,7 @@
     "section": "NR (01-10)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Multiple system atrophy - cerebellar type",
     "caseImages": [
@@ -73878,7 +73878,7 @@
     "section": "NR (01-10)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Large vestibular aqueduct syndrome",
     "caseImages": [
@@ -74448,7 +74448,7 @@
     "section": "PE (43-46)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Duplication of collecting system",
     "caseImages": [
@@ -74477,7 +74477,7 @@
     "section": "PE (43-46)",
     "year": "201811",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hepatic mesenchymal hamartoma",
     "caseImages": [
@@ -74576,7 +74576,7 @@
     "section": "NR (01-10)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Olfactory neuroblastoma",
     "caseImages": [
@@ -74590,7 +74590,7 @@
     "section": "NR (01-10)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Coalescent mastoiditis",
     "caseImages": [
@@ -75153,7 +75153,7 @@
     "section": "PE (43-46)",
     "year": "201902",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Prepyloric antral web",
     "caseImages": [
@@ -76029,7 +76029,7 @@
     "section": "NR (01-10)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ramsay Hunt syndrome",
     "caseImages": [
@@ -76044,7 +76044,7 @@
     "section": "NR (01-10)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Sialadenitis",
     "caseImages": [
@@ -76611,7 +76611,7 @@
     "section": "PE (43-46)",
     "year": "201908",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Caudal regression syndrome",
     "caseImages": [
@@ -76812,7 +76812,7 @@
     "section": "NR (01-10)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Corticobasal degeneration (CBD)",
     "caseImages": [
@@ -77283,7 +77283,7 @@
     "section": "PE (43-46)",
     "year": "201911",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Congenital lobar overinflation (CLO)",
     "caseImages": [
@@ -78154,7 +78154,7 @@
     "section": "NR (01-10)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hirayama disease",
     "caseImages": [
@@ -78211,7 +78211,7 @@
     "section": "NR (01-10)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Jugulotympanic paraganglioma",
     "caseImages": [
@@ -78239,7 +78239,7 @@
     "section": "NR (01-10)",
     "year": "202005",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Incudo-malleolar joint dislocation",
     "caseImages": [
@@ -78881,7 +78881,7 @@
     "section": "NR (01-10)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tuberculosis lymphadenitis",
     "caseImages": [
@@ -78911,7 +78911,7 @@
     "section": "NR (01-10)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Jugulotympanic paraganglioma",
     "caseImages": [
@@ -79453,7 +79453,7 @@
     "section": "PE (43-46)",
     "year": "202008",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Moyamoya disease",
     "caseImages": [
@@ -79668,7 +79668,7 @@
     "section": "NR (01-10)",
     "year": "202011",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cholesteatoma",
     "caseImages": [
@@ -80390,7 +80390,7 @@
     "section": "NR (01-10)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ranula",
     "caseImages": [
@@ -80881,7 +80881,7 @@
     "section": "PE (43-46)",
     "year": "202102",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Caudal regression syndrome",
     "caseImages": [
@@ -81010,7 +81010,7 @@
     "section": "NR (01-10)",
     "year": "202106",
     "hospital": "雙和",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Traumatic axonal injury (TAI)",
     "caseImages": [
@@ -81746,7 +81746,7 @@
     "section": "NR (01-10)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Methotrexate-induced leukoencephalopathy",
     "caseImages": [
@@ -81802,7 +81802,7 @@
     "section": "NR (01-10)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cochlear nerve canal stenosis",
     "caseImages": [
@@ -82311,7 +82311,7 @@
     "section": "PE (43-46)",
     "year": "202108",
     "hospital": "高長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Esophageal duplication (Foregut duplication)",
     "caseImages": [
@@ -82387,7 +82387,7 @@
     "section": "NR (01-10)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Creutzfeldt-Jakob disease (CJD)",
     "caseImages": [
@@ -82445,7 +82445,7 @@
     "section": "NR (01-10)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "X-linked adrenoleukodystrophy",
     "caseImages": [
@@ -82501,7 +82501,7 @@
     "section": "NR (01-10)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Superior semicircular canal dehiscence syndrome",
     "caseImages": [
@@ -82515,7 +82515,7 @@
     "section": "NR (01-10)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Moyamoya disease",
     "caseImages": [
@@ -82701,7 +82701,7 @@
     "section": "MS (23-30)",
     "year": "202111",
     "hospital": "北榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Chondrosarcoma",
     "caseImages": [
@@ -83170,7 +83170,7 @@
     "section": "NR (01-10)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Oropharyngeal lymphangioma",
     "caseImages": [
@@ -83692,7 +83692,7 @@
     "section": "PE (43-46)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Undescended thyroid gland",
     "caseImages": [
@@ -83734,7 +83734,7 @@
     "section": "PE (43-46)",
     "year": "202202",
     "hospital": "中國",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Situs inversus totalis with Detro-ventricular loop",
     "caseImages": [
@@ -83863,7 +83863,7 @@
     "section": "NR (01-10)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Epidermoid cyst  (CNS)",
     "caseImages": [
@@ -83905,7 +83905,7 @@
     "section": "NR (01-10)",
     "year": "202205",
     "hospital": "新光",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Vestibular schwannoma",
     "caseImages": [
@@ -84608,7 +84608,7 @@
     "section": "NR (01-10)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ranula",
     "caseImages": [
@@ -85149,7 +85149,7 @@
     "section": "PE (43-46)",
     "year": "202208",
     "hospital": "中榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gastroschisis",
     "caseImages": [
@@ -85276,7 +85276,7 @@
     "section": "NR (01-10)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Jugulotympanic paraganglioma",
     "caseImages": [
@@ -85333,7 +85333,7 @@
     "section": "NR (01-10)",
     "year": "202211",
     "hospital": "台大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Intralabyrinthine Schwannoma",
     "caseImages": [
@@ -86277,7 +86277,7 @@
     "section": "MS (23-30)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Chondrosarcoma",
     "caseImages": [
@@ -86546,7 +86546,7 @@
     "section": "PE (43-46)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pyriform sinus fistula infection with thyroiditis",
     "caseImages": [
@@ -86560,7 +86560,7 @@
     "section": "PE (43-46)",
     "year": "202302",
     "hospital": "成大",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Pancreatoblastoma",
     "caseImages": [
@@ -86693,7 +86693,7 @@
     "section": "NR (01-10)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Kimura Disease",
     "caseImages": [
@@ -86751,7 +86751,7 @@
     "section": "NR (01-10)",
     "year": "202305",
     "hospital": "馬偕",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Bezold abscess",
     "caseImages": [
@@ -87953,7 +87953,7 @@
     "section": "US (39-42)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Multicystic dysplastic kidney (MCDK)",
     "caseImages": [
@@ -87967,7 +87967,7 @@
     "section": "PE (43-46)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Hepatic mesenchymal hamartoma",
     "caseImages": [
@@ -87982,7 +87982,7 @@
     "section": "PE (43-46)",
     "year": "202308",
     "hospital": "高榮",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Alobar holoprosencephaly",
     "caseImages": [
@@ -88157,7 +88157,7 @@
     "section": "NR (01-10)",
     "year": "202311",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Amyotrophic lateral sclerosis (ALS)",
     "caseImages": [
@@ -88213,7 +88213,7 @@
     "section": "NR (01-10)",
     "year": "202311",
     "hospital": "林長",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cholesteatoma",
     "caseImages": [
@@ -88833,7 +88833,7 @@
     "section": "NR (01-10)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Clival chordoma",
     "caseImages": [
@@ -88892,7 +88892,7 @@
     "section": "NR (01-10)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cholesterol granuloma",
     "caseImages": [
@@ -88920,7 +88920,7 @@
     "section": "NR (01-10)",
     "year": "202402",
     "hospital": "高醫",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Skull base sarcoma",
     "caseImages": [
@@ -89512,7 +89512,7 @@
     "section": "NR (01-10)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Diffuse axonal injury (DAI)",
     "caseImages": [
@@ -89582,7 +89582,7 @@
     "section": "NR (01-10)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Gradenigo syndrome",
     "caseImages": [
@@ -90135,7 +90135,7 @@
     "section": "PE (43-46)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Enteric duplication cyst with bowel obstruction",
     "caseImages": [
@@ -90164,7 +90164,7 @@
     "section": "PE (43-46)",
     "year": "202405",
     "hospital": "三總",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Omphalocele",
     "caseImages": [
@@ -90280,7 +90280,7 @@
     "section": "NR (01-10)",
     "year": "202408",
     "hospital": "彰基",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "IgG4-related sialadenitis",
     "caseImages": [
@@ -91009,7 +91009,7 @@
     "section": "NR (01-10)",
     "year": "202411",
     "hospital": "國泰",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Vestibular schwannoma",
     "caseImages": [
@@ -92281,7 +92281,7 @@
     "section": "PE (43-46)",
     "year": "202502",
     "hospital": "奇美",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Lobar holoprosencephaly",
     "caseImages": [
@@ -92451,7 +92451,7 @@
     "section": "NR (01-10)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "IgG4-related sialadenitis",
     "caseImages": [
@@ -92509,7 +92509,7 @@
     "section": "NR (01-10)",
     "year": "202505",
     "hospital": "萬芳",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Cholesteatoma",
     "caseImages": [
@@ -93207,7 +93207,7 @@
     "section": "NR (01-10)",
     "year": "202508",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Kikuchi-Fujimoto disease",
     "caseImages": [
@@ -93712,7 +93712,7 @@
     "section": "PE (43-46)",
     "year": "202508",
     "hospital": "中山",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Swyer-James syndrome",
     "caseImages": [
@@ -93824,7 +93824,7 @@
     "section": "NR (01-10)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Ludwig angina",
     "caseImages": [
@@ -93838,7 +93838,7 @@
     "section": "NR (01-10)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Tosillar lymphoma",
     "caseImages": [
@@ -93866,7 +93866,7 @@
     "section": "NR (01-10)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Moyamoya disease",
     "caseImages": [
@@ -93924,7 +93924,7 @@
     "section": "NR (01-10)",
     "year": "202511",
     "hospital": "亞東",
-    "disputed": false,
+    "disputed": true,
     "isExchange": false,
     "diagnosis": "Neuronal intranuclear inclusion disease (NIID)",
     "caseImages": [

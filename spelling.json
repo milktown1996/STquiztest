@@ -49,6 +49,18 @@
     ]
   },
   {
+    "name": "Alobar holoprosencephaly",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20230844"
+    ]
+  },
+  {
     "name": "Alveolar soft part sarcoma (ASPS)",
     "subjects": [
       "MS"
@@ -149,6 +161,18 @@
     ]
   },
   {
+    "name": "Bezold abscess",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20230509"
+    ]
+  },
+  {
     "name": "Bicipitoradial bursitis",
     "subjects": [
       "MS"
@@ -166,6 +190,18 @@
     ],
     "questionIds": [
       "ST20170229"
+    ]
+  },
+  {
+    "name": "Bisphosphonate-Related Osteonecrosis of the Jaw (BRONJ)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20170205"
     ]
   },
   {
@@ -221,6 +257,26 @@
     ]
   },
   {
+    "name": "Brachiocephalic artery compression syndrome",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20170243"
+    ]
+  },
+  {
+    "name": "Carney complex (cardiac myxoma and testicular tumor)",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [],
+    "questionIds": []
+  },
+  {
     "name": "Cavernous transformation",
     "subjects": [
       "US"
@@ -258,6 +314,32 @@
     "questionIds": [
       "ST20211143",
       "ST20170503"
+    ]
+  },
+  {
+    "name": "Choanal atresia",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20240243"
+    ]
+  },
+  {
+    "name": "Cholesteatoma",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20250509",
+      "ST20231110",
+      "ST20201109"
     ]
   },
   {
@@ -342,6 +424,30 @@
     "questionIds": [
       "ST20221144",
       "ST20191126"
+    ]
+  },
+  {
+    "name": "Congenital vallecular cyst with laryngomalacia",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20220244"
+    ]
+  },
+  {
+    "name": "Creutzfeldt-Jakob disease (CJD)",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20211101"
     ]
   },
   {
@@ -711,6 +817,18 @@
     ]
   },
   {
+    "name": "Glutaric aciduria type 1",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20211144"
+    ]
+  },
+  {
     "name": "Gossypiboma",
     "subjects": [
       "GI"
@@ -840,6 +958,18 @@
     ]
   },
   {
+    "name": "Hepatopulmonary syndrome",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20250845"
+    ]
+  },
+  {
     "name": "Hereditary haemorrhagic telangiectasia (HHT)",
     "subjects": [
       "GI",
@@ -942,6 +1072,18 @@
     ]
   },
   {
+    "name": "Intralabyrinthine Schwannoma",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20221109"
+    ]
+  },
+  {
     "name": "Ivory epiphysis",
     "subjects": [
       "MS"
@@ -979,6 +1121,22 @@
       "ST20200806",
       "ST20200507",
       "ST20161110"
+    ]
+  },
+  {
+    "name": "Juvenile nasopharyngeal angiofibroma (JNA)",
+    "subjects": [
+      "NR",
+      "PE"
+    ],
+    "sections": [
+      "NR (01-10)",
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20240846",
+      "ST20240801",
+      "ST20211108"
     ]
   },
   {
@@ -1079,6 +1237,18 @@
     ],
     "questionIds": [
       "ST20190207"
+    ]
+  },
+  {
+    "name": "Large vestibular aqueduct syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20181103"
     ]
   },
   {
@@ -1231,6 +1401,18 @@
       "ST20230850",
       "ST20200548",
       "ST20180548"
+    ]
+  },
+  {
+    "name": "Ludwig angina",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20251102"
     ]
   },
   {
@@ -1524,6 +1706,18 @@
     ],
     "sections": [],
     "questionIds": []
+  },
+  {
+    "name": "Multicystic dysplastic kidney (MCDK)",
+    "subjects": [
+      "US"
+    ],
+    "sections": [
+      "US (39-42)"
+    ],
+    "questionIds": [
+      "ST20230842"
+    ]
   },
   {
     "name": "Multifocal micronodular pneumocyte hyperplasia (MMPH)",
@@ -1941,6 +2135,14 @@
     ]
   },
   {
+    "name": "Pleuroparenchymal fibroelastosis (PPFE)",
+    "subjects": [
+      "CH"
+    ],
+    "sections": [],
+    "questionIds": []
+  },
+  {
     "name": "Pneumatosis cystoides intestinalis",
     "subjects": [
       "GI"
@@ -2029,6 +2231,18 @@
     ]
   },
   {
+    "name": "Pulmonary interstitial emphysema (PIE)",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20160545"
+    ]
+  },
+  {
     "name": "Pylephlebitis",
     "subjects": [
       "GI"
@@ -2078,6 +2292,19 @@
     ]
   },
   {
+    "name": "Schizencephaly",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20210201",
+      "ST20160204"
+    ]
+  },
+  {
     "name": "Serpentine aneurysm",
     "subjects": [
       "NR"
@@ -2102,6 +2329,19 @@
     ]
   },
   {
+    "name": "Sialadenitis",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20190806",
+      "ST20170505"
+    ]
+  },
+  {
     "name": "Sinding-Larsen-Johansson disease",
     "subjects": [
       "MS"
@@ -2111,6 +2351,18 @@
     ],
     "questionIds": [
       "ST20210630"
+    ]
+  },
+  {
+    "name": "Situs inversus totalis with Detro-ventricular loop",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20220246"
     ]
   },
   {
@@ -2156,6 +2408,18 @@
     ]
   },
   {
+    "name": "Stafne bone defect",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20180801"
+    ]
+  },
+  {
     "name": "Sturge Weber syndrome",
     "subjects": [
       "NR"
@@ -2171,6 +2435,26 @@
     ]
   },
   {
+    "name": "Subgaleal hematoma",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [],
+    "questionIds": []
+  },
+  {
+    "name": "Superior semicircular canal dehiscence syndrome",
+    "subjects": [
+      "NR"
+    ],
+    "sections": [
+      "NR (01-10)"
+    ],
+    "questionIds": [
+      "ST20211109"
+    ]
+  },
+  {
     "name": "Supraspinatus tear with geyser sign pseudotumor",
     "subjects": [
       "MS"
@@ -2180,6 +2464,19 @@
     ],
     "questionIds": [
       "ST20221130"
+    ]
+  },
+  {
+    "name": "Swyer-James syndrome",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20250844",
+      "ST20160245"
     ]
   },
   {
@@ -2306,6 +2603,18 @@
     ],
     "questionIds": [
       "ST20221107"
+    ]
+  },
+  {
+    "name": "Undifferentiated embryonal sarcoma of liver (UESL)",
+    "subjects": [
+      "PE"
+    ],
+    "sections": [
+      "PE (43-46)"
+    ],
+    "questionIds": [
+      "ST20180544"
     ]
   },
   {
